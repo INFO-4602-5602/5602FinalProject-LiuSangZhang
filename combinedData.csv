@@ -1,0 +1,200 @@
+Language,Unimorph,UD,UnimorphNow,UnimorphUpcoming,UDNow,UDUpcoming,Forms,Paradigms,Forms/Paradigms,Noun Forms,Noun Paradigms,Verb Forms,Verb Paradigms,Adjective Forms,Adjective Paradigms,OtherPOS Forms,OtherPOS Paradigms,MSD,Noun MSD,Verb MSD,ADJ MSD,OtherPOS MSD,features,Noun features,Verb features,ADJ features,OtherPOS features,Typology,Templatic,Type,LanguageFamily,LanguageFamilyDetail,TreebankNum,TreebankNames,Tokens,Sentences,Tokens/Sentences,Words,Low Resource
+!Xóõ,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,Tu,Tu,0,0,0,0,0,0,1
+Adyghe,1,0,1,0,0,0,20475,1666,12,19809,1609,0,0,666,57,0,0,42,30,0,12,0,19,10,0,9,0,agglutinative,false,living,Northwest Caucasian,Northwest Caucasian,0,0,0,0,0,0,0
+Afrikaans,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Germanic,1,AfriBooms,49276,1934,25,49276,1
+Akkadian,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Afro-Asiatic,Semitic,1,PISANDUB,1852,101,18,1852,1
+Albanian,1,0,1,0,0,0,33483,648,51,6795,404,26688,244,0,0,0,0,140,20,120,0,0,29,10,19,0,0,fusional,false,living,IE,Albanian,0,0,0,0,0,0,0
+Amharic,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Afro-Asiatic,Semitic,1,ATT,5245,1074,4,10010,1
+Ancient Greek,1,1,1,0,1,0,41593,2431,17,33328,2224,0,0,8265,207,0,0,75,15,0,60,0,21,9,0,12,0,fusional,false,historical,IE,Greek,2,"PROIEL, Perseus",416988,30999,13,416988,0
+Arabic,1,1,1,0,1,0,140003,5026,27,60696,3553,59587,907,19720,566,0,0,196,36,112,48,0,43,11,20,12,0,fusional,true,living,Afro-Asiatic,Semitic,3,"NYUAD, PADT, PUD",892102,28402,31,1042024,0
+Aragonese,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Italic,0,0,0,0,0,0,1
+Aramaic,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,true,ancient,Afro-Asiatic,Semitic,0,0,0,0,0,0,1
+Armenian,1,1,1,0,1,0,338461,7152,47,162750,4979,136142,908,39569,1265,0,0,254,68,152,34,0,51,12,28,11,0,fusional,false,living,IE,Armenian,1,ArmTDP,52265,2502,20,52630,0
+Assamese,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,IE,Indic,1,AsTB,0,0,0,0,1
+Assyrian,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Afro-Asiatic,Semitic,1,AS,453,57,7,453,1
+Asturian,1,0,1,0,0,0,29797,436,68,0,0,29537,384,260,52,0,0,224,0,219,5,0,42,0,36,6,0,fusional,false,living,IE,Romance,0,0,0,0,0,0,0
+Azerbaijani,1,0,1,0,0,0,8004,340,23,7896,334,108,6,0,0,0,0,88,70,18,0,0,25,15,10,0,0,agglutinative,false,living,Altaic,Turkic,0,0,0,0,0,0,0
+Bambara,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,N/A,Mande,1,CRB,13823,1026,13,13823,1
+Bashkir,1,0,1,0,0,0,12168,1084,11,12150,1082,0,0,18,2,0,0,36,24,0,12,0,21,11,0,10,0,fusional,false,living,Altaic,Turkic,0,0,0,0,0,0,0
+Basque,1,1,1,0,1,0,11889,26,457,0,0,11889,26,0,0,0,0,1659,0,1659,0,0,32,0,32,0,0,agglutinative,false,living,N/A,Basque,1,BDT,121443,8993,13,121443,0
+Belarusian,1,1,1,0,1,0,16113,1027,15,5717,508,4753,310,5643,209,0,0,82,38,18,26,0,42,15,13,14,0,fusional,false,living,IE,Slavic,1,HSE,13325,637,20,13325,0
+Bengali,1,1,1,0,0,1,4443,136,32,579,52,3864,84,0,0,0,0,58,12,46,0,0,26,9,17,0,0,fusional,false,living,IE,Indic,2,"BRU, DDS",0,0,0,0,0
+Bhojpuri,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,IE,Indic,1,BHTB,4881,254,19,4881,1
+Breton,1,1,1,0,1,0,2294,44,52,0,0,2294,44,0,0,0,0,115,0,115,0,0,20,0,20,0,0,fusional,false,living,IE,Celtic,1,KEB,9760,888,10,10054,0
+Bulgarian,1,1,1,0,1,0,55730,2479,22,8725,1334,33955,699,13050,446,0,0,95,9,56,30,0,45,8,24,13,0,fusional,false,living,IE,Slavic,1,BTB,156149,11138,14,156149,0
+Buriat,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,agglutinative,false,living,Altaic,Mongolic,1,BDT,10185,927,10,10185,1
+Cantonese,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Sino-Tibetan,Chinese,1,HK,13918,1004,13,13918,1
+Catalan,1,1,1,0,1,0,81576,1547,52,0,0,81576,1547,0,0,0,0,53,0,53,0,0,20,0,20,0,0,fusional,false,living,IE,Romance,1,AnCora,530766,16678,31,531971,0
+Central Kurdish,1,1,1,0,0,1,22990,274,83,2918,163,20072,111,0,0,0,0,433,216,217,0,0,52,34,18,0,0,fusional,false,living,IE,Iranian,1,MG,0,0,0,0,1
+Chechen,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,Nakh-Daghestanian,Nakh,0,0,0,0,0,0,1
+Classical Armenian,1,0,1,0,0,0,97181,4300,22,45708,3115,44885,741,6588,444,0,0,410,237,78,95,0,68,28,22,18,0,fusional,false,historical,N/A,IE,0,0,0,0,0,0,0
+Classical Chinese,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Sino-Tibetan,Chinese,1,Kyoto,74770,15115,4,74770,1
+Classical Nahuatl,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,historical,N/A,Uto-Aztecan,0,0,0,0,0,0,1
+Classical Syriac,1,0,1,0,0,0,3652,160,22,3592,155,0,0,60,5,0,0,44,32,0,12,0,27,19,0,8,0,fusional,true,historical,Afro-Asiatic,Semitic,0,0,0,0,0,0,0
+Coptic,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Afro-Asiatic,Egyptian,1,Scriptorium,18981,1575,12,40034,1
+Cornish,1,0,1,0,0,0,469,9,52,0,0,469,9,0,0,0,0,113,0,113,0,0,24,0,24,0,0,fusional,false,living,IE,Celtic,0,0,0,0,0,0,1
+Corsican,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Italic,0,0,0,0,0,0,1
+Crimean Tatar,1,0,1,0,0,0,7514,1230,6,7074,1146,320,64,120,20,0,0,23,12,5,6,0,24,8,9,7,0,fusional,false,living,Turkic,Common Turkic,0,0,0,0,0,0,0
+Croatian,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,IE,Slavic,1,SET,199409,9010,22,199409,1
+Cusco Quechua,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,N/A,Quechuan,1,Squoia,0,0,0,0,1
+Czech,1,1,1,0,1,0,134527,5876,22,44275,3620,41834,683,48370,1527,48,46,216,42,109,43,22,65,12,24,15,14,fusional,false,living,IE,Slavic,5,"PDT, FicTree, PUD, CAC, CLTT",2217119,127507,17,2222163,0
+Danish,1,1,1,0,1,0,25503,3404,7,24207,3242,1296,162,0,0,0,0,14,6,8,0,0,16,7,9,0,0,fusional,false,living,IE,Germanic,2,"DDT, DTB",100733,5512,18,100733,0
+Dargwa,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,N/A,Nakho-Dagestanian,1,Mehweb,0,0,0,0,1
+Dutch,1,1,1,0,1,0,55467,5040,11,0,0,34382,2149,21084,2890,1,1,26,0,16,9,1,23,0,13,8,2,fusional,false,living,IE,Germanic,2,"Alpino, LassySmall",306764,20916,14,306764,0
+Egyptian Arabic,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,true,living,Afro-Asiatic,Semitic,0,0,0,0,0,0,1
+English,1,1,1,0,1,0,115523,25731,4,0,0,115523,25731,0,0,0,0,5,0,5,0,0,7,0,7,0,0,fusional,false,living,IE,Germanic,7,"GUM, ParTUT, PUD, LinES, Pronouns, EWT, ESL",620511,35791,17,620543,0
+Erzya,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Uralic,Mordvin,1,JR,15593,1550,10,15790,1
+Estonian,1,1,1,0,1,0,38215,886,43,20280,675,17935,211,0,0,0,0,108,30,78,0,0,37,18,19,0,0,agglutinative,false,living,Uralic,Finnic,2,"EDT, EWT",465055,32634,14,465055,0
+Faroese,1,1,1,0,1,0,45474,3394,13,31372,2364,8207,670,5882,349,13,11,50,16,14,17,3,37,9,14,11,3,fusional,false,living,IE,Germanic,1,OFT,10002,1208,8,10002,0
+Finnish,1,1,1,0,1,0,1999999,63208,31,973166,40405,880125,16482,146429,6042,279,279,229,56,141,28,4,62,20,19,18,5,agglutinative,false,living,Uralic,Finnic,3,"TDT, PUD, FTB",377334,34859,10,377882,0
+French,1,1,1,0,1,0,367732,19937,18,0,0,366880,19085,0,0,852,852,52,0,49,0,3,23,0,19,0,4,fusional,false,living,IE,Romance,8,"ParTUT, GSD, Sequoia, FQB, Spoken, PUD, FTB, CrapBank",1124269,45074,24,1157171,0
+Friulian,1,0,1,0,0,0,8071,168,48,0,0,8071,168,0,0,0,0,54,0,54,0,0,20,0,20,0,0,fusional,false,living,IE,Italic,0,0,0,0,0,0,0
+Gagauz,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,agglutinative,false,living,Altaic,Turkic,0,0,0,0,0,0,1
+Galician,1,1,1,0,1,0,36801,486,75,0,0,36801,486,0,0,0,0,87,0,87,0,0,25,0,25,0,0,fusional,false,living,IE,Romance,2,"TreeGal, CTG",149490,4993,29,164385,0
+Georgian,1,1,1,0,0,1,74412,3784,19,69331,3646,3371,48,1710,90,0,0,128,38,71,19,0,41,12,18,11,0,agglutinative,false,living,N/A,Kartvelian,1,GNC,0,0,0,0,0
+German,1,1,1,0,1,0,179335,17751,10,93327,12660,85767,4877,0,0,241,214,39,8,29,0,2,23,7,13,0,3,fusional,false,living,IE,Germanic,4,"HDT, GSD, PUD, LIT",3748466,208440,17,3753947,0
+Gothic,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Germanic,1,PROIEL,55336,5401,10,55336,1
+Greek,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,IE,Greek,1,GDT,61773,2521,24,63441,1
+Greenlandic,1,0,1,0,0,0,368,23,16,368,23,0,0,0,0,0,0,16,16,0,0,0,11,11,0,0,0,,,,Eskimo-Aleut,Eskimo,0,0,0,0,0,0,1
+Haida,1,0,1,0,0,0,7040,41,171,0,0,7040,41,0,0,0,0,179,0,179,0,0,29,0,29,0,0,agglutinative,false,living,Haida,Haida,0,0,0,0,0,0,0
+Hausa,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,true,living,Afro-Asiatic,West Chadic,0,0,0,0,0,0,1
+Hebrew,1,1,1,0,1,0,13818,524,26,3744,149,10074,375,0,0,0,0,54,26,28,0,0,27,14,13,0,0,fusional,true,living,Afro-Asiatic,Semitic,1,HTB,115535,6216,18,161417,0
+Hindi,1,1,1,0,1,0,54438,258,211,0,0,54438,258,0,0,0,0,211,0,211,0,0,25,0,25,0,0,fusional,false,living,IE,Indic,2,"HDTB, PUD",375533,17647,21,375533,0
+Hindi English,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,N/A,Code switching,1,HIENCS,26909,1898,14,26909,1
+Hittite,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,ancient,IE,Anatolian,0,0,0,0,0,0,1
+Hungarian,1,1,1,0,1,0,536685,14891,36,429393,12782,107292,2109,0,0,0,0,93,34,59,0,0,37,20,17,0,0,agglutinative,false,living,Uralic,Ugric,1,Szeged,42032,1800,23,42032,0
+Icelandic,1,1,1,0,0,1,76915,5404,14,59400,4674,17506,721,0,0,9,9,46,16,28,0,2,26,9,14,0,3,fusional,false,living,IE,Germanic,1,PUD,0,0,0,0,0
+Indonesian,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Austronesian,Malayo-Sumbawan,2,"GSD, PUD",141823,6593,21,141823,1
+Ingrian,1,0,1,0,0,0,1099,50,21,1077,49,0,0,22,1,0,0,44,22,0,22,0,28,14,0,14,0,fusional,false,living,Uralic,Finnic,0,0,0,0,0,0,0
+Inuktitut,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,agglutinative,false,living,Eskimo-Aleut,Eskimo,0,0,0,0,0,0,1
+Irish,1,1,1,0,1,0,107298,7464,14,80654,6919,24694,392,1950,153,0,0,89,13,63,13,0,42,8,18,16,0,fusional,false,living,IE,Celtic,1,IDT,40572,1763,23,40572,0
+Istriot,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Italic,0,0,0,0,0,0,1
+Italian,1,1,1,0,1,0,509574,10010,50,0,0,509574,10010,0,0,0,0,51,0,51,0,0,19,0,19,0,0,fusional,false,living,IE,Romance,6,"ISDT, VIT, ParTUT, TWITTIRO, PoSTWITA, PUD",759457,35481,21,811522,0
+Japanese,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,agglutinative,false,living,N/A,Japanese,5,"GSD, PUD, Modern, BCCWJ, KTC",1688503,74275,22,1688503,1
+Jèrriais,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Italic,0,0,0,0,0,0,1
+Kabardian,1,0,1,0,0,0,3092,250,12,3020,244,0,0,72,6,0,0,36,24,0,12,0,19,10,0,9,0,agglutinative,false,living,Northwest Caucasian,Northwest Caucasian,0,0,0,0,0,0,0
+Kalaallisut,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,agglutinative,false,living,Eskimo-Aleut,Eskimo,0,0,0,0,0,0,1
+Kannada,1,1,1,0,0,1,6402,159,40,2652,124,3750,35,0,0,0,0,180,95,85,0,0,50,28,22,0,0,agglutinative,false,living,Dravidian,Southern,1,MKG,0,0,0,0,0
+Karelian,1,1,1,0,1,0,682,20,34,651,19,0,0,31,1,0,0,93,62,0,31,0,39,20,0,19,0,agglutinative,false,living,Uralic,Finnic,1,KKPP,3094,228,13,3094,1
+Kashubian,1,0,1,0,0,0,509,37,13,509,37,0,0,0,0,0,0,14,14,0,0,0,10,10,0,0,0,fusional,false,living,IE,Slavic,0,0,0,0,0,0,1
+Kazakh,1,1,1,0,1,0,357,26,13,357,26,0,0,0,0,0,0,14,14,0,0,0,10,10,0,0,0,agglutinative,false,living,Turkic,Northwestern,1,KTB,10383,1078,9,10536,1
+Khakas,1,0,1,0,0,0,1200,75,16,1200,75,0,0,0,0,0,0,16,16,0,0,0,11,11,0,0,0,agglutinative,false,living,Altaic,Turkic,0,0,0,0,0,0,0
+Khaling,1,0,1,0,0,0,156097,17703,8,0,0,156097,17703,0,0,0,0,432,0,432,0,0,26,0,26,0,0,agglutinative,false,living,Sino-Tibetan,Mahakiranti,0,0,0,0,0,0,0
+Kirghiz,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,agglutinative,false,living,Altaic,Turkic,0,0,0,0,0,0,1
+Komi Permyak,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Uralic,Permic,1,UH,399,49,8,399,1
+Komi Zyrian,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Uralic,Permic,2,"Lattice, IKDP",3463,327,10,3463,1
+Korean,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,agglutinative,false,living,Koreanic,Han,5,"Kaist, GSD, PUD, Penn, Sejong",446996,34702,12,446996,1
+Kyrgyz,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Turkic,Northwestern,1,KTB,0,0,0,0,1
+Ladin,1,0,1,0,0,0,7656,180,42,0,0,7656,180,0,0,0,0,94,0,94,0,0,19,0,19,0,0,fusional,false,living,IE,Romance,0,0,0,0,0,0,0
+Ladino,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Romance,0,0,0,0,0,0,1
+Latin,1,1,1,0,1,0,509182,17214,29,100104,8402,231627,2318,177451,6494,0,0,151,12,99,40,0,41,9,18,14,0,fusional,false,ancient,IE,Latin,3,"PROIEL, ITTB, Perseus",582336,41695,13,582336,0
+Latvian,1,1,1,0,1,0,136998,12167,11,46917,5809,23309,835,66772,5523,0,0,80,14,42,24,0,47,10,26,11,0,fusional,false,living,IE,Baltic,1,LVTB,220536,13643,16,220536,0
+Limburgan,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Germanic,0,0,0,0,0,0,1
+Lithuanian,1,1,1,0,1,0,34130,1458,23,14257,1067,11417,233,8456,158,0,0,139,14,49,76,0,45,10,20,15,0,fusional,false,living,IE,Baltic,2,"ALKSNIS, HSE",75403,3905,19,75403,0
+Livonian,1,0,1,0,0,0,3987,203,19,2238,143,872,10,877,50,0,0,143,34,90,19,0,53,13,28,12,0,fusional,false,living,Uralic,Finnic,0,0,0,0,0,0,0
+Livvi,1,1,1,0,1,0,63501,15293,4,39654,9472,13913,3376,9209,2246,725,199,152,56,54,21,21,68,31,15,12,10,agglutinative,false,living,Uralic,Finnic,1,KKPP,1632,125,13,1632,0
+Low German,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Germanic,0,0,0,0,0,0,1
+Lower Sorbian,1,0,1,0,0,0,20121,1899,10,12372,1399,2898,161,4851,339,0,0,72,18,21,33,0,35,10,10,15,0,fusional,false,living,IE,Slavic,0,0,0,0,0,0,0
+Ludian,1,0,1,0,0,0,104,68,1,79,48,9,4,0,0,16,16,24,11,7,0,6,33,11,11,0,11,agglutinative,false,living,Uralic,Finnic,0,0,0,0,0,0,0
+Luxembourgish,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Germanic,0,0,0,0,0,0,1
+Macedo-Romanian,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Italic,0,0,0,0,0,0,1
+Macedonian,1,1,1,0,0,1,168057,10322,16,49169,5093,91720,3531,27168,1698,0,0,139,32,91,16,0,52,23,19,10,0,fusional,false,living,IE,Slavic,1,MTB,0,0,0,0,0
+Maghrebi Arabic French,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Afro-Asiatic,Semitic,1,Arabizi,0,0,0,0,1
+Malagasy,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,Austronesian,Barito,0,0,0,0,0,0,1
+Malay,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,Austronesian,Malayo-Sumbawan,0,0,0,0,0,0,1
+Malayalam,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,agglutinative,false,living,Dravidian,Southern Dravidian,0,0,0,0,0,0,1
+Maltese,1,1,1,0,1,0,3584,112,32,16,1,3568,111,0,0,0,0,32,8,24,0,0,26,10,16,0,0,fusional,false,living,Afro-Asiatic,Semitic,1,MUDT,44162,2074,21,44162,0
+Mandarin Chinese,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,agglutinative,false,living,Sino-Tibetan,Chinese,5,"GSDSimp, GSD, PUD, HK, CFL",285127,12449,22,285127,1
+Manx,1,0,1,0,0,0,14,1,14,0,0,0,0,0,0,14,1,14,0,0,0,14,11,0,0,0,11,fusional,false,living,IE,Celtic,0,0,0,0,0,0,1
+Mapudungun,1,0,1,0,0,0,783,26,30,0,0,783,26,0,0,0,0,27,0,27,0,0,10,0,10,0,0,agglutinative,false,living,Araucanian,Araucanian,0,0,0,0,0,0,1
+Marathi,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,IE,Indic,1,UFAL,3506,466,7,3849,1
+Mbya Guarani,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Tupian,Tupí–Guaraní,2,"Thomas, Dooley",13089,1144,11,13089,1
+Middle Dutch,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,historical,IE,Germanic,0,0,0,0,0,0,1
+Middle French,1,0,1,0,0,0,36970,603,61,0,0,36970,603,0,0,0,0,113,0,113,0,0,21,0,21,0,0,fusional,false,historical,IE,Italic,0,0,0,0,0,0,0
+Middle High German,1,0,1,0,0,0,708,29,24,77,8,631,21,0,0,0,0,38,8,30,0,0,20,7,13,0,0,fusional,false,historical,IE,Germanic,0,0,0,0,0,0,1
+Middle Low German,1,0,1,0,0,0,1513,52,29,32,4,1238,39,243,9,0,0,52,8,22,22,0,33,7,14,12,0,fusional,false,historical,IE,Germanic,0,0,0,0,0,0,0
+Mirandese,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Italic,0,0,0,0,0,0,1
+Modern Greek,1,0,1,0,0,0,199757,11906,16,65570,8373,67520,1106,66667,2427,0,0,180,32,76,72,0,40,11,16,13,0,fusional,false,living,IE,Hellenic,0,0,0,0,0,0,0
+Moksha,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Uralic,Mordvin,1,JR,560,65,8,561,1
+Murrinhpatha,1,0,1,0,0,0,1110,30,37,0,0,1110,30,0,0,0,0,37,0,37,0,0,11,0,11,0,0,,,,Southern Daly,Murrinh-Patha,0,0,0,0,0,0,0
+Naija,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,N/A,Creole,1,NSC,12863,948,13,12863,1
+Navajo,1,0,1,0,0,0,12354,1499,8,1776,322,10544,1146,0,0,34,31,62,10,50,0,2,28,11,15,0,2,agglutinative,false,living,Na-Dene,Athapaskan,0,0,0,0,0,0,0
+Neapolitan,1,0,1,0,0,0,1808,40,45,0,0,1808,40,0,0,0,0,52,0,52,0,0,20,0,20,0,0,fusional,false,living,IE,Italic,0,0,0,0,0,0,0
+Norman,1,0,1,0,0,0,280,5,56,0,0,280,5,0,0,0,0,56,0,56,0,0,24,0,24,0,0,,,,IE,Italic,0,0,0,0,0,0,1
+North Frisian,1,0,1,0,0,0,3204,51,62,0,0,3204,51,0,0,0,0,65,0,65,0,0,19,0,19,0,0,fusional,false,living,IE,Germanic,0,0,0,0,0,0,0
+Northern Kurdish,1,1,1,0,1,0,216370,15083,14,189935,14847,26435,236,0,0,0,0,208,125,83,0,0,61,38,23,0,0,fusional,false,living,IE,Iranian,1,MG,10188,754,13,10260,1
+Northern Sami,1,1,1,0,1,0,62677,2103,29,11824,913,46836,881,4017,309,0,0,80,13,54,13,0,34,10,14,10,0,fusional,false,living,Uralic,Sami,1,Giella,26845,3122,8,26845,1
+Northern Tiwa,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,Tanoan,Tiwa,0,0,0,0,0,0,1
+Norwegian Bokmål,1,1,1,0,1,0,19238,5725,3,14061,4254,3093,620,2084,851,0,0,33,9,9,15,0,27,8,8,11,0,fusional,false,living,IE,Germanic,3,"Bokmaal, Nynorsk, NynorskLIA",666984,42869,15,666984,1
+Norwegian Nynorsk,1,1,1,0,1,0,15319,4730,3,12783,4278,2460,412,76,40,0,0,55,31,10,14,0,44,22,10,12,0,fusional,false,living,IE,Germanic,3,"Bokmaal, Nynorsk, NynorskLIA",666984,42869,15,666984,1
+Occitan,1,0,1,0,0,0,8316,174,47,0,0,8316,174,0,0,0,0,53,0,53,0,0,20,0,20,0,0,fusional,false,living,IE,Romance,0,0,0,0,0,0,0
+Ojibwa,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,Algic,Algonquian,0,0,0,0,0,0,1
+Old Church Slavonic,1,1,1,0,1,0,4148,152,27,4148,152,0,0,0,0,0,0,21,21,0,0,0,11,11,0,0,0,fusional,false,ancient,IE,Slavic,1,PROIEL,57563,6338,9,57563,0
+Old Dutch,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,historical,IE,Germanic,0,0,0,0,0,0,1
+Old English,1,0,1,0,0,0,42425,1867,22,8550,829,15742,753,18133,285,0,0,154,68,17,69,0,40,14,13,13,0,fusional,false,historical,IE,Germanic,0,0,0,0,0,0,0
+Old French,1,1,1,0,1,0,123374,1700,72,736,72,122638,1628,0,0,0,0,304,27,277,0,0,43,13,30,0,0,fusional,false,historical,IE,Romance,1,SRCMF,170741,17678,9,170741,0
+Old Irish,1,0,1,0,0,0,1089,49,22,82,2,1007,47,0,0,0,0,262,30,232,0,0,38,11,27,0,0,fusional,false,historical,IE,Celtic,0,0,0,0,0,0,0
+Old Norse,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,historical,IE,Germanic,0,0,0,0,0,0,1
+Old Portuguese,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,historical,IE,Romance,0,0,0,0,0,0,1
+Old Provençal,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Italic,0,0,0,0,0,0,1
+Old Russian,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,IE,Slavic,2,"RNC, TOROT",168522,17548,9,168522,1
+Old Saxon,1,0,1,0,0,0,22287,863,25,1548,185,12387,570,8352,108,0,0,149,8,21,120,0,34,7,13,14,0,fusional,false,historical,IE,Germanic,0,0,0,0,0,0,0
+Panjabi,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Indic,0,0,0,0,0,0,1
+Pashto,1,0,1,0,0,0,6945,395,17,1652,270,4581,68,712,57,0,0,130,20,94,16,0,34,10,15,9,0,fusional,false,living,IE,Iranian,0,0,0,0,0,0,0
+Persian,1,1,1,0,1,0,37128,420,88,0,0,37128,420,0,0,0,0,136,0,136,0,0,18,0,18,0,0,fusional,false,living,IE,Iranian,1,Seraji,151625,5997,25,152920,0
+Pnar,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Austro-Asiatic,Khasian,1,PTB,0,0,0,0,1
+Polish,1,1,1,0,1,0,201024,11211,17,97534,8112,47512,1018,55944,2052,34,29,125,14,69,28,14,58,10,21,15,12,fusional,false,living,IE,Slavic,3,"PDB, LFG, PUD",496682,40398,12,499392,0
+Portuguese,1,1,1,0,1,0,303996,5088,59,0,0,303916,5008,0,0,80,80,81,0,76,0,5,29,0,22,0,7,fusional,false,living,IE,Romance,3,"Bosque, GSD, PUD",530327,22443,23,570543,0
+Quechua,1,0,1,0,0,0,180004,9783,18,158640,7907,21260,1773,2,1,102,102,599,553,41,2,3,73,46,19,4,4,agglutinative,false,living,Quechuan,Quechuan,0,0,0,0,0,0,0
+Romanian,1,1,1,0,1,0,80266,4405,18,21903,2314,44992,1216,13371,875,0,0,59,6,37,16,0,37,8,19,10,0,fusional,false,living,IE,Romance,3,"Nonstandard, SiMoNERo, RRT",551932,25858,21,551932,0
+Romansch,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Romance,2,"Rumgr, Sursilv",0,0,0,0,1
+Romany,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Indo-Iranian,0,0,0,0,0,0,1
+Russian,1,1,1,0,1,0,473481,28549,16,181266,16054,140412,7178,151803,5317,0,0,127,42,25,60,0,49,15,18,16,0,fusional,false,living,IE,Slavic,4,"GSD, Taiga, PUD, SynTagRus",1263651,71183,17,1263651,0
+Sanskrit,1,1,1,0,1,0,33847,917,36,20835,737,0,0,13012,180,0,0,120,48,0,72,0,28,13,0,15,0,fusional,false,ancient,IE,Indic,1,UFAL,1474,230,6,1843,0
+Sardinian,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Romance,0,0,0,0,0,0,1
+Saterfriesisch,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Germanic,0,0,0,0,0,0,1
+Scottish Gaelic,1,1,1,0,1,0,781,73,10,0,0,133,19,648,54,0,0,19,0,7,12,0,17,0,8,9,0,fusional,false,living,IE,Celtic,1,ARCOSG,42838,2193,19,42848,0
+Serbian,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Slavic,1,SET,97673,4384,22,97673,1
+Serbo Croatian,1,0,1,0,0,0,840799,24419,34,150844,11548,265435,4348,424520,8523,0,0,303,14,70,219,0,50,10,21,19,0,,,,IE,Balto-Slavic,0,0,0,0,0,0,0
+Shipibo Konibo,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Panoan,Panoan,1,PUCP,0,0,0,0,1
+Sicilian,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Romance,0,0,0,0,0,0,1
+Sindhi,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,IE,Indic,1,MazharDootio,0,0,0,0,1
+Skolt Sami,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,Uralic,Sami,1,Giellagas,319,36,8,321,1
+Slovak,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,IE,Slavic,1,SNK,106043,10604,10,106043,1
+Slovenian,1,1,1,0,1,0,60110,2671,22,29862,2045,2467,105,27781,521,0,0,99,18,26,55,0,45,10,20,15,0,fusional,false,living,IE,Slavic,2,"SSJ, SST",170158,11188,15,170158,0
+Somali,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Afro-Asiatic,Cushitic,1,STB,0,0,0,0,1
+Spanish,1,1,1,0,1,0,382955,6353,60,0,0,382885,6291,0,0,70,62,75,0,70,0,5,31,0,23,0,8,fusional,false,living,IE,Romance,3,"AnCora, GSD, PUD",993848,34693,28,1004443,0
+Swahili,1,0,1,0,0,0,10092,100,100,72,2,9129,47,891,51,0,0,225,36,171,18,0,53,13,28,12,0,fusional,false,living,Niger-Congo,Bantoid,0,0,0,0,0,0,0
+Swedish,1,1,1,0,1,0,78411,11162,7,49476,7278,18228,1998,10617,1802,90,84,38,8,11,15,4,33,7,10,10,6,fusional,false,living,IE,Germanic,3,"Talbanken, LinES, PUD",206903,12269,16,206903,0
+Swedish Sign Language,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,N/A,Sign Language,1,SSLC,1610,203,7,1610,1
+Swiss German,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Germanic,1,UZH,1444,100,14,1444,1
+Tagalog,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,agglutinative,false,living,Austronesian,Central Philippine,1,TRG,292,55,5,292,1
+Tajik,1,0,1,0,0,0,77,75,1,76,74,1,1,0,0,0,0,4,3,1,0,0,6,4,2,0,0,fusional,false,living,IE,Iranian,0,0,0,0,0,0,0
+Tamil,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Dravidian,Southern,1,TTB,8635,600,14,9581,1
+Tatar,1,0,1,0,0,0,7832,1283,6,7380,1197,320,64,132,22,0,0,23,12,5,6,0,24,8,9,7,0,agglutinative,false,living,Altaic,Turkic,0,0,0,0,0,0,0
+Telugu,1,1,1,0,1,0,1548,127,12,198,11,1350,116,0,0,0,0,40,16,24,0,0,23,11,12,0,0,agglutinative,false,living,Dravidian,South Central,1,MTG,6465,1328,4,6465,0
+Thai,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,N/A,Tai-Kadai,1,PUD,22322,1000,22,22322,1
+Tibetan,1,0,1,0,0,0,353,65,5,0,0,353,65,0,0,0,0,4,0,4,0,0,5,0,5,0,0,fusional,false,living,Sino-Tibetan,Bodic,0,0,0,0,0,0,0
+Tswana,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,Niger-Congo,Bantoid,0,0,0,0,0,0,1
+Turkish,1,1,1,0,1,0,275460,3579,76,200076,2924,70560,588,4824,67,0,0,300,108,120,72,0,53,24,15,14,0,agglutinative,false,living,Turkic,Southwestern,4,"GB, IMST, PUD, BOUN",89442,9437,9,91626,0
+Turkmen,1,0,1,0,0,0,810,68,11,810,68,0,0,0,0,0,0,12,12,0,0,0,9,9,0,0,0,agglutinative,false,living,Altaic,Turkic,0,0,0,0,0,0,0
+Uighur,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,agglutinative,false,living,Turkic,Southeastern,1,UDT,40236,3456,11,40236,1
+Ukrainian,1,1,1,0,1,0,20904,1494,13,18207,1376,1631,77,1066,41,0,0,65,14,25,26,0,42,10,18,14,0,fusional,false,living,IE,Slavic,1,IU,122275,7060,17,122324,0
+Upper Sorbian,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,IE,Slavic,1,UFAL,11196,646,17,11196,1
+Urdu,1,1,1,0,1,0,12572,603,20,756,126,11816,477,0,0,0,0,217,6,211,0,0,31,6,25,0,0,fusional,false,living,IE,Indic,1,UDTB,138077,5130,26,138077,0
+Uzbek,1,0,1,0,0,0,1260,15,84,1260,15,0,0,0,0,0,0,84,84,0,0,0,15,15,0,0,0,agglutinative,false,living,Altaic,Turkic,0,0,0,0,0,0,0
+Venetian,1,0,1,0,0,0,18227,368,49,0,0,18227,368,0,0,0,0,110,0,110,0,0,21,0,21,0,0,fusional,false,living,IE,Romance,0,0,0,0,0,0,0
+Veps (Vepsian),1,0,1,0,0,0,31768,832,38,19077,473,8939,238,2562,61,1190,60,353,94,110,37,112,89,24,19,22,24,agglutinative,false,living,Uralic,Finnic,0,0,0,0,0,0,0
+Vietnamese,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Austro-Asiatic,Viet-Muong,1,VTB,43754,3000,14,43754,1
+Votic,1,0,1,0,0,0,1430,55,26,1430,55,0,0,0,0,0,0,26,26,0,0,0,16,16,0,0,0,agglutinative,true,living,Uralic,Finnic,0,0,0,0,0,0,0
+Võro,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,Uralic,Finnic,0,0,0,0,0,0,1
+Walloon,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Romance,0,0,0,0,0,0,1
+Warlpiri,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,N/A,Pama-Nyungan,1,UFAL,306,55,5,314,1
+Welsh,1,1,1,0,1,0,10641,183,58,0,0,10641,183,0,0,0,0,63,0,63,0,0,18,0,18,0,0,fusional,false,living,IE,Celtic,1,CCG,16820,956,17,16989,0
+West Frisian,1,0,1,0,0,0,1429,85,16,0,0,1429,85,0,0,0,0,20,0,20,0,0,15,0,15,0,0,fusional,false,living,IE,Germanic,0,0,0,0,0,0,0
+Wolof,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Niger-Congo,Northern Atlantic,1,WTB,42832,2107,20,44258,1
+Wymysorys,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,fusional,false,living,IE,Germanic,0,0,0,0,0,0,1
+Yiddish,1,0,1,0,0,0,7986,803,9,729,41,3007,294,4250,468,0,0,38,18,11,9,0,45,17,12,16,0,fusional,false,living,IE,Germanic,0,0,0,0,0,0,0
+Yoruba,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Niger-Congo,Defoid,1,YTB,2664,100,26,2664,1
+Yucatec Maya,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,agglutinative,false,living,Mayan,Mayan,0,0,0,0,0,0,1
+Zulu,1,0,1,0,0,0,49119,566,86,23044,410,25463,139,612,17,0,0,249,64,149,36,0,70,20,30,20,0,agglutinative,false,living,Niger-Congo,Bantoid,0,0,0,0,0,0,0

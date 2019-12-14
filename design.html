@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WikiArt Analysis</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header id="header" class="header">
+      <div class ="row">
+        <div class = "col-sm-1"></div>
+        <h1 class = "col-sm-5" style="font-size:24px;" >WikiArt Analysis</h1>
+        <nav class = "col-sm-6 text-right">
+          <a href = "index.html">Home</a>
+          <a href = "about.html">About Us</a>
+        </nav>
+      </div>
+
+
+
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>Design</h1>
+                            <p class="p-heading p-large">How to collect the data? How do we do the design work?</p>
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+        </div> 
+    </header> 
+
+
+    <section id = "datacollection" class = "container">
+      <h2>Data Collection</h2>
+      <div class = "row" style="margin-top: 40px;">
+        <p style="margin-left: 20px;">This work is based on WikiArt Emotions Dataset. The dataset integrated both basic and emotion information of more than 4000 artworks. For each artwork, the basic information attributes in the dataset included Title, Artist, Year, Style, Category, Painting or not, Face or Body, and related URL. Other attributes were related to emotions. An average number of the degree of like was regarded as the Mean Rating. And for each emotion, there was an average number to record the proportion of selecting it for this artwork. </p>
+        <div class = "col-sm-12">
+          <img class ="portrait" src = "images/DataCollection.png">
+        </div>
+        </div>
+    </section>
+
+
+     <section id = "design-roadmap" class = "container">
+      <h2>Design Roadmap</h2>
+      <div class = "row">
+        <div class = "col-sm-12">
+          <img class ="portrait" src = "images/roadmap.png">
+        </div>
+    </section>
+
+
+    <section id = "reference" class = "container">
+      <h2>Reference</h2>
+      <div class = "row" style="margin-top: 40px;">
+
+        <ol>
+          <li>WikiArt Emotions: An Annotated Dataset of Emotions Evoked by Art. Saif M. Mohammad and Svetlana Kiritchenko. In Proceedings of the 11th Edition of the Language Resources and Evaluation Conference (LREC-2018), May 2018, Miyazaki, Japan.</li>
+          <li>Dataset:<a href="http://saifmohammad.com/WebPages/wikiartemotions.html" style="color:blue;">WikiArt Emotions Dataset</a></li>
+          <li>Tools:
+            <ul>
+              <li><a href="https://flourish.studio/" style="color:blue;">Flourish</a></li>
+              <li><a href="https://www.tableau.com/" style="color:blue;">Tableau</a></li>
+              <li><a href="https://matplotlib.org/" style="color:blue;">Matplotlib</a></li>
+              <li><a href="https://infograph.venngage.com/ps/0BEetzP3eto/neon-startup-product-roadmap_new" style="color:blue;">Venngage</a></li>               
+            </ul>
+          </li>
+         </ol>
+    </section>
+ 
+
+  <div id="gotop">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </div>
+
+
+
+
+    <footer class = "container" >
+        <div class = "row" >
+          <p>&copy; 2019 INFO 5602 Group 6</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+    <script>
+      $(function(){
+
+          $(window).scroll(function(){  
+
+              var scrollt = document.documentElement.scrollTop + document.body.scrollTop; 
+
+              if( scrollt >600 ){  
+
+                  $("#gotop").fadeIn(400); 
+
+              }else{
+
+                  $("#gotop").stop().fadeOut(400); 
+
+              }
+
+          });
+
+          $("#gotop").click(function(){ 
+
+              $("html,body").animate({scrollTop:"0px"},200);
+
+          }); 
+
+      });
+    </script>
+  </body>
+</html>

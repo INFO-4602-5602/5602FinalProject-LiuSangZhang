@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Linguistic dataset analysis</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header id="header" class="header">
+      <div class ="row">
+        <div class = "col-sm-1"></div>
+        <h1 class = "col-sm-5" style="font-size:24px;" >Linguistic Datasets Analysis</h1>
+        <nav class = "col-sm-6 text-right">
+          <a href = "detail.html">Corpus</a>
+          <a href = "design.html">Design</a>
+          <a href = "about.html">About Us</a>
+        </nav>
+      </div>
+
+
+
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>Unimorph Dataset Analysis</h1>
+                            <p class="p-large">Explore the emotions we can get from arts and how they influence our favor of different art styles.</p>
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+        </div> 
+    </header> 
+
+
+
+  <section id = "introduction" class = "container">
+    <h2>UD & UM introduction</h2>
+    <div class = "row">
+      <div class ="col-sm-12">
+        <p>asdfghjklasdfghjksdfghjklsdfghjkasdfghjklasdfghjksdfghjklsdfghjkasdfghjkla</p>
+      </div>
+    </div>
+  </section>
+
+  <div class= "row">
+    <div class="col-sm-12"><h2 style="margin-left: 80px;margin-top: 20px;">Language map</h2></div>
+    <div class="column col-sm-8">
+        <svg id="map" >
+        <rect width="100%" height="100%" stroke="white" stroke-width="3" fill="#c8def7" opacity="0.2"/>
+      </svg>
+    </div>
+
+    <div class="col-sm-4">
+      <div id="wordcloud"></div>
+    </div>
+
+  </div>
+
+<!--   <div class= "row">
+    <div class="col-sm-3">
+      <p>language family</p>
+      <p>countries</p>
+    </div>
+    <div class="col-sm-3">
+      <p>Type</p>
+      <p>Typology</p>
+      <p>form</p>
+      <p>Paradigms</p>
+      <p>Pos info</p>
+    </div>
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-3">
+    </div> -->
+
+  <!-- </div> -->
+
+
+    <section id = "viz1" class = "container">
+      <h2 >Data Collection</h2>
+      <div class = "row" style="margin-top: 40px;">
+        <div class ="col-sm-4">
+          <p style="margin-left: 20px;">asdfghjklasdfghjksdfghjklsdfghjk</p>
+        </div>
+        <div class = "col-sm-8">
+          <img class ="portrait" src = "images/typology.png">
+        </div>
+        </div>
+    </section>
+
+    <section id = "viz2" class = "container">
+      <h2>Data Collection</h2>
+      <div class = "row" style="margin-top: 40px;">
+        <div class = "col-sm-7">
+          <img class ="portrait" src = "images/FAndP.png">
+        </div>
+        <div class ="col-sm-5">
+          <p style="margin-left: 20px;">asdfghjklasdfghjksdfghjklsdfghjk</p>
+        </div>
+        </div>
+    </section>
+
+
+  
+<!--   <section id="category">
+      <div class="container">
+        <div class = "row">
+         <div class="imgcard col-sm-3" onclick="{location.href='detail.html'}">
+            <img src="images/r.png" style="width:100%">
+             <div class="container">
+                 <p>Renaissance Art</p>
+             </div>
+         </div>
+
+       </div>
+    </div>
+  </section> -->
+
+  <div id="gotop">
+    <div class="arrow"></div>
+    <div class="stick"></div>
+  </div>
+
+
+
+
+    <footer class = "container" >
+        <div class = "row" >
+          <p>&copy; 2019 INFO 5602 Group 6</p>
+        </div>
+    </footer>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/queue.v1.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  <!-- Color scale -->
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+  <script>
+
+    // Set tooltips for map
+    var tip = d3.tip() //https://github.com/caged/d3-tip/blob/master/docs/index.md
+            .attr('class', 'd3-tip')
+            .direction('n')
+            // .offset([0, 0]) //https://github.com/caged/d3-tip/blob/master/docs/positioning-tooltips.md
+            .html(function(d) {
+              return "<span class='detailsCountryName'>" + d.properties.name + "<br></span>"
+                     + "<strong> Unimorph & UD dataset</strong><br>"
+                     + "<span class='details'> Total languages:" + format(d.participantnum) +"<br></span>"
+                     // + "<span class='details'> > by Self-Identify: " + format(d.participantnumSelf) +"</span>";
+            });
+
+    /*
+    D3.js setup code
+    */
+    var margin = {top: 10, right: 0, bottom: 0, left: 10};
+    var width = 600 - margin.left - margin.right;
+    var height = 500 - margin.top - margin.bottom;
+
+    var color = d3.scaleThreshold()
+                  .domain([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17])
+                  .range(["rgb(209, 209, 176)","rgb(245, 245, 120)", "rgb(199,233,180)", "rgb(170, 227, 138)","rgb(78, 212, 160)","rgb(127,205,187)", "rgb(114, 188, 196)", "rgb(65,182,196)","rgb(47, 166, 214)", "rgb(29,145,192)","rgb(23, 108, 212)","rgb(34,94,168)","rgb(37,52,148)","rgb(8,29,88)","rgb(2,56,88)"]);
+                  // .range(d3.schemeYlGnBu[9]);
+
+    var format = d3.format(","); //https://github.com/d3/d3-format
+
+    // Source: https://github.com/d3/d3-geo
+    var projection = d3.geoMercator()
+                   .scale(120) // adjust the size of the map
+                  .translate( [width /1.6, height/1.2]); //adjust the location of the map on the canvas
+
+    var path = d3.geoPath().projection(projection);
+
+    ////////////////////////////////////////////////
+
+    // load data with queue
+    var countryloc = "world_countries.json";
+    var surveryinfo = "countryToLanguage.csv";
+
+    var q = queue()
+            .defer(d3.json, countryloc)
+            .defer(d3.csv, surveryinfo)
+            .awaitAll(draw);
+
+    function draw(error, data) {
+
+    // important: First argument it expects is error
+    if (error) throw error;
+    // console.log(data);
+
+    var mapData = data[0];
+    var surveyData = data[1];
+    // console.log(mapData);
+    // console.log(surveyData);
+
+    surveyData.forEach(function (d) {
+      if (d.Country === ""){
+         d.Country = "NA";
+      }
+        // console.log(d);
+    });
+
+    // surveyData.forEach(function (d) {
+    //   if (d["I consider myself:"].includes("Average User")) {
+    //     d["I consider myself:"] = "Average User";
+    //   } else if (d["I consider myself:"].includes("Technically Savvy")) {
+    //     d["I consider myself:"] = "Technically Savvy";
+    //   } else if (d["I consider myself:"].includes("Ultra Nerd")) {
+    //      d["I consider myself:"] = "Ultra Nerd";
+    //   } else if (d["I consider myself:"].includes("Luddite")) {
+    //      d["I consider myself:"] = "Luddite";
+    //   } else {
+    //      d["I consider myself:"] = "NaN";
+    //   }
+    //     // console.log(d);
+    // });
+
+    // surveyData.forEach(function (d) {
+    //   if (d["Country or Region (optional)"] === "") {
+    //      d["Country or Region (optional)"] = "NA";
+    //   }
+
+    //   surveyData.forEach(function (d) {
+    //     if (d["Country"] === "") {
+    //      d["Country"] = "NA";
+    //   }
+    //     // console.log(d);
+    // });
+
+
+    /*
+    Map starts
+    - count categorical variables
+      Source: http://www.shanegibney.com/shanegibney/d3-js-v4-count-values-in-an-object/
+    */
+    var countryCount = d3.nest()
+        .key(function (d) {
+            return d.Country;
+        })
+        .rollup(function (leaves) {
+            return leaves.length;
+        })
+        .entries(surveyData);
+
+
+    var countryCountDict = {};
+    countryCount.forEach(function (d) {
+        countryCountDict[d.key] = +d.value;
+    });
+    // console.log(countryCountDict);
+
+    mapData.features.forEach(function (d) {
+        d.participantnum = countryCountDict[d.properties.name];
+        // console.log(d);
+    });
+
+
+    ///////// country/region reported by the participants themselves ///////////
+
+    var countryCountSelf = d3.nest()
+        .key(function (d) {
+            // return d["Country or Region (optional)"];
+            return d["Country"];
+        })
+        .rollup(function (leaves) {
+            return leaves.length;
+        })
+        .entries(surveyData);
+
+    var countryCountSelfDict = {};
+    countryCountSelf.forEach(function (d) {
+        countryCountSelfDict[d.key] = +d.value;
+    });
+    // console.log(countryCountDict);
+
+    mapData.features.forEach(function (d) {
+        d.participantnumSelf = countryCountSelfDict[d.properties.name];
+        // console.log(d);
+    });
+
+    // create and append the map of SF neighborhoods
+    var map = d3.select('#map')
+                 .selectAll('path')
+                 .data(mapData.features)
+                 .enter()
+                 .append('path')
+                 .attr('d', path)
+                 .attr('width', width)
+                 .attr('height', height)
+                 // add the neighborhood name as its class
+                 .attr('class', function(d) {
+                    return d.properties.name;
+                 })
+
+                 .style("fill", function(d) {
+                   if (typeof d.participantnum !== 'undefined') {
+                      return color(d.participantnum);
+                   } else {
+                       return "gray"
+                     }})
+                 .style('stroke', 'white')
+                 .style('stroke-width', 1.5)
+                 .style("opacity",0.8)
+        .on('mouseover',function(d){
+          d3.select(this)
+            .style("fill", "pink")
+            .style("stroke","white")
+            .style("stroke-width",3);
+          tip.show(d);
+          var cname = d.properties.name;
+          console.log(cname)
+          func_text_cloud(cname);
+          // drawChart(cname);
+          // drawBarChart(cname);
+        })
+        .on('click',function(d){
+          d3.select(this)
+            .style("fill", "pink")
+            .style("stroke","white")
+            .style("stroke-width",3);
+          tip.show(d);
+          var cname = d.properties.name;
+          console.log(cname)
+          func_text_cloud(cname);
+          // drawChart(cname);
+          // drawBarChart(cname);
+        })
+        .on('mouseout', function(d){
+          tip.hide(d);
+          d3.selectAll("#wordcloud > *").remove();;
+          // svg.selectAll("*").
+          // var cname = d.properties.name;
+          d3.select(this)
+          // d3.select("path." + cname)
+            .style("opacity", 0.8)
+            .style("fill", function(d) {
+                   if (typeof d.participantnum !== 'undefined') {
+                      return color(d.participantnum);
+                   } else {
+                       return "gray"
+                     }})
+            .style("stroke","white")
+            .style("stroke-width",0.3);
+        });
+
+    map.call(tip);
+
+    // add legend
+    var legend = d3.select('#map').selectAll(".legend")
+                        .data(color.domain())
+                        .enter().append("g")
+                        .attr("class", "legend")
+                        .attr("transform", function(d, i){
+                          return "translate(0," + (i * 20) + ")"
+                        });
+        legend.append("rect")
+              .attr("x", width+190)
+                .attr("y", 20)
+              .attr("width", 18)
+              .attr("height", 18)
+              .style("fill", color);
+
+        legend.append("text")
+              .attr("x", width+175)
+              .attr("y", 30)
+              .attr("dy", ".35em")
+              .style("text-anchor", "end")
+              .text(function(d){return d;});
+
+        d3.select("#map").append('text')
+                .attr("x", width+170)
+                .attr("y", 15)
+                      .attr("dy", "0em")
+                      .style("font-size", "1em")
+                      .style("text-anchor", "middle")
+                      .text("Threshold");
+
+
+    /*
+     Map ends
+    */
+
+    // Text cloud source: https://www.d3-graph-gallery.com/graph/wordcloud_custom.html
+    function func_text_cloud(country_name) {
+      var combinedData = "combinedData.csv";
+      // var country_name = 'Germany';
+
+      var q_2 = queue()
+          .defer(d3.csv, combinedData)
+          .defer(d3.csv, surveryinfo)
+          .awaitAll(text_show);
+
+      function text_show(error, data) {
+        // important: First argument it expects is error
+        if (error) throw error;
+        // console.log(data);
+
+        console.log("-----------------")
+        var mapData = data[0];
+        var surveyData = data[1];
+        // console.log(mapData);
+        console.log(surveyData);
+
+        var countryCount = d3.map(surveyData, function(d) {return d.Language}).keys()
+
+        var myWords = [];
+
+        surveyData.forEach(function (d_1) {
+          if(d_1.Country == country_name) {
+            var country_size = 40;
+            mapData.forEach(function (d_2) {
+              if(d_2.Language == d_1.Language) {
+                // country_size = d_2.Paradigms;
+              }
+            });
+            myWords.push({word: d_1.Language, size: country_size});
+          }
+        });
+        console.log(myWords);
+
+        // List of words
+        // var myWords = [{word: "German", size: "50"}, {word: "Gothic", size: "50"}, {word: "Low German", size: "50"}, {word: "Lower Sorbian", size: "50"}, {word: "Middle High German", size: "50"}, {word: "Middle Low German", size: "50"},{word: "North Frisian", size: "50"},{word: "Old Saxon", size: "50"},{word: "Yiddish", size: "50"},{word: "Saterfriesisch", size: "50"}, {word: "Upper Sorbian", size: "50"}]
+
+        // set the dimensions and margins of the graph
+        var margin = {top: 10, right: 10, bottom: 10, left: 10},
+            width = 400 - margin.left - margin.right,
+            height = 650 - margin.top - margin.bottom;
+
+        // append the svg object to the body of the page
+        var svg = d3.select("#wordcloud").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+          .append("g")
+            .attr("transform",
+                  "translate(" + margin.left + "," + margin.top + ")");
+
+        // Constructs a new cloud layout instance. It run an algorithm to find the position of words that suits your requirements
+        // Wordcloud features that are different from one word to the other must be here
+        var fill = d3.scaleOrdinal(d3.schemeCategory20);
+        var layout = d3.layout.cloud()
+          .size([width, height])
+          .words(myWords.map(function(d) { return {text: d.word, size:d.size}; }))
+          .padding(5)        //space between words
+          .rotate(function() { return ~~(Math.random() * 2) * 65; })
+          .fontSize(function(d) { return d.size; })      // font size of words
+          .on("end", draw);
+        layout.start();
+
+        // This function takes the output of 'layout' above and draw the words
+        // Wordcloud features that are THE SAME from one word to the other can be here
+        function draw(words) {
+          svg
+            .append("g")
+              .attr("transform", "translate(" + layout.size()[0] / 2.5 + "," + layout.size()[1] / 2 + ")")
+              .selectAll("text")
+                .data(words)
+              .enter().append("text")
+                .style("font-size", function(d) { return d.size; })
+                // .style("fill", "#69b3a2")
+                .style("fill", (d, i) => fill(i))
+                .attr("text-anchor", "middle")
+                .style("font-family", "Montserrat")
+                .attr("transform", function(d) {
+                  return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                })
+                .text(function(d) { return d.text; });
+        }
+      };
+    };
+    
+
+    }
+
+
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+    <script>
+      $(function(){
+
+          $(window).scroll(function(){  
+
+              var scrollt = document.documentElement.scrollTop + document.body.scrollTop; 
+
+              if( scrollt >600 ){  
+
+                  $("#gotop").fadeIn(400); 
+
+              }else{
+
+                  $("#gotop").stop().fadeOut(400); 
+
+              }
+
+          });
+
+          $("#gotop").click(function(){ 
+
+              $("html,body").animate({scrollTop:"0px"},200);
+
+          }); 
+
+      });
+    </script>
+
+
+
+
+
+  </body>
+</html>
