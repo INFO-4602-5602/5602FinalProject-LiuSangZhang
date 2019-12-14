@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Linguistic dataset analysis</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header" class="header" style="  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), center center no-repeat;background-size: cover;">
+      <div class ="row">
+        <div class = "col-sm-1"></div>
+        <h1 class = "col-sm-5" style="font-size:24px;" >Linguistic Datasets Analysis</h1>
+        <nav class = "col-sm-6 text-right">
+          <a href = "index.html">Home</a>
+          <a href = "detail.html">Corpus</a>
+          <a href = "design.html">Design</a>
+          <a href = "about.html">About Us</a>
+        </nav>
+      </div>
+
+
+
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>Language Details </h1>
+
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+        </div> 
+    </header> 
+
+<div class="container">
+  <label>Choose a language</label>
+  <select>
+  </select>
+    <section id = "language" class = "container">
+      <div class="row">
+        <div class= "col-sm-4">
+          <label>Type</label><h2>living</h2>
+          <label>Language family</label><h2>IE</h2>
+          <label>country</label><h2>Canada</h2>
+          <label>Typology</label><h2>Fusional</h2>
+        </div>
+        <div class= "col-sm-4">
+          <label>Form numbers in UM</label><h1 id="time">0</h1>
+          <label>Paradigms numbers in UM</label><h1 id="time">0</h1>
+        </div>
+        <div class= "col-sm-4">
+          <label>Token numbers in UD</label><h1 id="time">0</h1>
+          <label>Sentence numbers in UD</label><h1 id="time">0</h1>
+        </div>
+      </div>
+      <div class="row">
+                
+        <div class= "col-sm-6">
+          <div id="chartContainer" style="height: 360px; width: 100%;"></div>
+        </div>
+
+        <div class= "col-sm-6">
+          <div id="chartContainer" style="height: 360px; width: 100%;"></div>
+        </div>
+      </div>
+
+    </section>
+</div>
+
+
+
+
+    <div id="gotop">
+      <div class="arrow"></div>
+      <div class="stick"></div>
+    </div>
+
+
+
+    <footer class = "container" >
+        <div class = "row" >
+          <p>&copy; 2019 INFO 5602 Group 6</p>
+        </div>
+    </footer>
+
+    <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+    <script>
+      $(function(){
+
+          $(window).scroll(function(){  
+
+              var scrollt = document.documentElement.scrollTop + document.body.scrollTop; 
+
+              if( scrollt >600 ){  
+
+                  $("#gotop").fadeIn(400); 
+
+              }else{
+
+                  $("#gotop").stop().fadeOut(400); 
+
+              }
+
+          });
+
+          $("#gotop").click(function(){ 
+
+              $("html,body").animate({scrollTop:"0px"},200);
+
+          }); 
+
+      });
+    </script>
+
+    <script>
+      //数字自增到某一值动画参数（目标元素,自定义配置）
+      function NumAutoPlusAnimation(targetEle, options) {
+ 
+        /*可以自己改造下传入的参数，按照自己的需求和喜好封装该函数*/
+        //不传配置就把它绑定在相应html元素的data-xxxx属性上吧
+        options = options || {};
+ 
+        var $this = document.getElementById(targetEle),
+          time = options.time || $this.data('time'), //总时间--毫秒为单位
+          finalNum = options.num || $this.data('value'), //要显示的真实数值
+          regulator = options.regulator || 100, //调速器，改变regulator的数值可以调节数字改变的速度
+ 
+          step = finalNum / (time / regulator),/*每30ms增加的数值--*/
+          count = 0, //计数器
+          initial = 0;
+ 
+        var timer = setInterval(function() {
+ 
+          count = count + step;
+ 
+          if(count >= finalNum) {
+            clearInterval(timer);
+            count = finalNum;
+          }
+          //t未发生改变的话就直接返回
+          //避免调用text函数，提高DOM性能
+          var t = Math.floor(count);
+          if(t == initial) return;
+ 
+          initial = t;
+ 
+          $this.innerHTML = initial;
+        }, 30);
+      }
+ 
+      NumAutoPlusAnimation("time", {
+        time: 7500,
+        num: 12000,
+        regulator: 50
+      })
+    </script>
+
+
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+   <!--  <script type="text/javascript">
+      var data = [];
+      var dataCsv =  'apple,70\norange,55\nbanana,50';
+
+
+      function addDataPoint(label,yValue){
+          var yData = parseInt(yValue);
+          var labelData = label;
+          var dataFlag = false;
+          for(var i=0;i<data.length;i++){       
+                  data[i].dataPoints.push({label:labelData, y:yData});
+                  dataFlag = true;
+          }
+          if(!dataFlag){
+              data.push({
+                  type : "column",
+                  dataPoints : [
+                      {label: labelData, y:yData}
+                  ]
+              });
+          }
+      }
+
+      function processData(allText) {
+          var allLinesArray = allText.split('\n');
+          if (allLinesArray.length > 0) {
+              for (var i = 0; i <= allLinesArray.length - 1; i++) {
+                  var rowData = allLinesArray[i].split(',');
+                  addDataPoint(rowData[0],rowData[1]);
+              }
+              chart.render();
+          }
+      }
+
+
+      var chart = new CanvasJS.Chart("chartContainer", {    
+          title: {
+              text: "csv formated data"
+          },
+          axisX : {
+            interval : 1,
+            intervalType : "hour"
+        },
+          data: data
+      });
+
+      processData(dataCsv);
+      
+    </script> -->
+    <script type="text/javascript">
+      window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+  title: {
+    text: "Temperature of Each Boiler"
+  },
+  axisY: {
+    title: "Temperature (°C)",
+    suffix: " °C"
+  },
+  data: [{
+    type: "column", 
+    yValueFormatString: "#,### °C",
+    indexLabel: "{y}",
+    dataPoints: [
+      { label: "boiler1", y: 206 },
+      { label: "boiler2", y: 163 },
+      { label: "boiler3", y: 154 },
+    ]
+  }]
+});
+
+function updateChart() {
+  var boilerColor, deltaY, yVal;
+  var dps = chart.options.data[0].dataPoints;
+  for (var i = 0; i < dps.length; i++) {
+    deltaY = Math.round(2 + Math.random() *(-2-2));
+    yVal = deltaY + dps[i].y > 0 ? dps[i].y + deltaY : 0;
+    boilerColor = yVal > 200 ? "#FF2500" : yVal >= 170 ? "#FF6000" : yVal < 170 ? "#6B8E23 " : null;
+    dps[i] = {label: "Boiler "+(i+1) , y: yVal, color: boilerColor};
+  }
+  chart.options.data[0].dataPoints = dps; 
+  chart.render();
+};
+updateChart();
+
+setInterval(function() {updateChart()}, 500);
+
+}
+    </script>
+
+
+
+  </body>
+</html>

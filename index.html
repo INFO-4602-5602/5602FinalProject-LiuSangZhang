@@ -14,6 +14,7 @@
         <div class = "col-sm-1"></div>
         <h1 class = "col-sm-5" style="font-size:24px;" >Linguistic Datasets Analysis</h1>
         <nav class = "col-sm-6 text-right">
+          <a href = "languageDetail.html">Language Details</a>
           <a href = "detail.html">Corpus</a>
           <a href = "design.html">Design</a>
           <a href = "about.html">About Us</a>
@@ -47,79 +48,169 @@
     </div>
   </section>
 
-  <div class= "row">
+  <div class= "row" >
     <div class="col-sm-12"><h2 style="margin-left: 80px;margin-top: 20px;">Language map</h2></div>
+        <div class="col-sm-4">
+      <div id="wordcloud"></div>
+    </div>
+
     <div class="column col-sm-8">
         <svg id="map" >
         <rect width="100%" height="100%" stroke="white" stroke-width="3" fill="#c8def7" opacity="0.2"/>
       </svg>
     </div>
 
-    <div class="col-sm-4">
-      <div id="wordcloud"></div>
-    </div>
-
   </div>
 
-<!--   <div class= "row">
-    <div class="col-sm-3">
-      <p>language family</p>
-      <p>countries</p>
-    </div>
-    <div class="col-sm-3">
-      <p>Type</p>
-      <p>Typology</p>
-      <p>form</p>
-      <p>Paradigms</p>
-      <p>Pos info</p>
-    </div>
-    <div class="col-sm-3">
-    </div>
-    <div class="col-sm-3">
-    </div> -->
 
-  <!-- </div> -->
+
+<section id = "language" class = "container">
+  <center><h2 >Adyghe</h2></center>
+  <div class="row">
+    <div class= "col-sm-4">
+      <label>Type</label><h2>living</h2>
+      <label>Language family</label><h2>IE</h2>
+      <label>country</label><h2>Canada</h2>
+      <label>Typology</label><h2>Fusional</h2>
+    </div>
+    <div class= "col-sm-3">
+      <label>Form numbers in UM</label><h1 id="time">0</h1>
+      <label>Paradigms numbers in UM</label><h1 id="time">0</h1>
+      <label>Token numbers in UD</label><h1 id="time">0</h1>
+      <label>Sentence numbers in UD</label><h1 id="time">0</h1>
+    </div>
+    <div class= "col-sm-5">
+      <div id="chartContainer" style="height: 360px; width: 100%;"></div>
+    </div>
+  </div>
+  <button type="button" onclick="{location.href='languageDetail.html'}">More details of each language</button>
+
+</section>
 
 
     <section id = "viz1" class = "container">
-      <h2 >Data Collection</h2>
-      <div class = "row" style="margin-top: 40px;">
-        <div class ="col-sm-4">
-          <p style="margin-left: 20px;">asdfghjklasdfghjksdfghjklsdfghjk</p>
+      <div class = "row">
+        <div class ="col-sm-5" style="margin-top: 100px;">
+          <h2 >Summary Analysis</h2>
+          <li>
+            The irregular pie chart shows the distribution of typologies in the language corpus.
+          </li>
+          <li>
+            Language Typology is classification of languages according to their structural and functional features.
+          </li>
+          <li>
+            Among the 199 languages in the corpus, 57% of them are fusional languages, 18.84% are Agglutinative languages and the rest have no typology.
+          </li>
         </div>
-        <div class = "col-sm-8">
-          <img class ="portrait" src = "images/typology.png">
+        <div class = "col-sm-7">
+          <img class ="portrait" src = "images/Language&Typology.png">
         </div>
         </div>
     </section>
 
     <section id = "viz2" class = "container">
-      <h2>Data Collection</h2>
-      <div class = "row" style="margin-top: 40px;">
-        <div class = "col-sm-7">
-          <img class ="portrait" src = "images/FAndP.png">
+      <div class = "row">
+        <div class = "col-sm-9">
+          <img class ="portrait" src = "images/MeanTableSize.png">
         </div>
-        <div class ="col-sm-5">
-          <p style="margin-left: 20px;">asdfghjklasdfghjksdfghjklsdfghjk</p>
+        <div class ="col-sm-3" style="margin-top: 100px;">
+          <h2 >Summary Analysis</h2>
+          <li>
+            The irregular pie chart shows the distribution of typologies in the language corpus.
+          </li>
+          <li>
+            Language Typology is classification of languages according to their structural and functional features.
+          </li>
+          <li>
+            Among the 199 languages in the corpus, 57% of them are fusional languages, 18.84% are Agglutinative languages and the rest have no typology.
+          </li>
+        </div>
+        </div>
+    </section>
+
+    <section id = "viz3" class = "container">
+      <div class = "row">
+        <div class ="col-sm-6" style="margin-top: 100px;">
+          <h2 >Summary Analysis</h2>
+          <li>
+            The irregular pie chart shows the distribution of typologies in the language corpus.
+          </li>
+          <li>
+            Language Typology is classification of languages according to their structural and functional features.
+          </li>
+          <li>
+            Among the 199 languages in the corpus, 57% of them are fusional languages, 18.84% are Agglutinative languages and the rest have no typology.
+          </li>
+        </div>
+        <div class = "col-sm-6">
+          <img class ="portrait" src = "images/Forms-Paradigms.png">
+        </div>
+      </div>
+    </section>
+
+
+    <section id = "viz4" class = "container">
+      <div class = "row">
+        <div class = "col-sm-7">
+          <img class ="portrait" src = "images/Sentence-Length.png">
+        </div>
+        <div class ="col-sm-5" style="margin-top: 100px;">
+          <h2 >Summary Analysis</h2>
+          <li>
+            The irregular pie chart shows the distribution of typologies in the language corpus.
+          </li>
+          <li>
+            Language Typology is classification of languages according to their structural and functional features.
+          </li>
+          <li>
+            Among the 199 languages in the corpus, 57% of them are fusional languages, 18.84% are Agglutinative languages and the rest have no typology.
+          </li>
         </div>
         </div>
     </section>
 
 
-  
-<!--   <section id="category">
-      <div class="container">
-        <div class = "row">
-         <div class="imgcard col-sm-3" onclick="{location.href='detail.html'}">
-            <img src="images/r.png" style="width:100%">
-             <div class="container">
-                 <p>Renaissance Art</p>
-             </div>
-         </div>
+    <section id = "viz5" class = "container">
+      <div class = "row">
+        <div class ="col-sm-4" style="margin-top: 100px;">
+          <h2 >Summary Analysis</h2>
+          <li>
+            The irregular pie chart shows the distribution of typologies in the language corpus.
+          </li>
+          <li>
+            Language Typology is classification of languages according to their structural and functional features.
+          </li>
+          <li>
+            Among the 199 languages in the corpus, 57% of them are fusional languages, 18.84% are Agglutinative languages and the rest have no typology.
+          </li>
+        </div>
+        <div class = "col-sm-8">
+          <img class ="portrait" src = "images/LanguageFamilyDist.png">
+        </div>
+      </div>
+    </section>
 
-       </div>
-    </div>
-  </section> -->
+
+    <section id = "viz6" class = "container">
+      <div class = "row">
+        <div class = "col-sm-12">
+          <img class ="portrait" src = "images/Low Resource.png">
+        </div>
+        <div class ="col-sm-12">
+          <h2 >Summary Analysis</h2>
+          <li>
+            The irregular pie chart shows the distribution of typologies in the language corpus.
+          </li>
+          <li>
+            Language Typology is classification of languages according to their structural and functional features.
+          </li>
+          <li>
+            Among the 199 languages in the corpus, 57% of them are fusional languages, 18.84% are Agglutinative languages and the rest have no typology.
+          </li>
+        </div>
+      </div>
+    </section>
+
 
   <div id="gotop">
     <div class="arrow"></div>
@@ -509,6 +600,94 @@
 
       });
     </script>
+    <script>
+      //数字自增到某一值动画参数（目标元素,自定义配置）
+      function NumAutoPlusAnimation(targetEle, options) {
+ 
+        /*可以自己改造下传入的参数，按照自己的需求和喜好封装该函数*/
+        //不传配置就把它绑定在相应html元素的data-xxxx属性上吧
+        options = options || {};
+ 
+        var $this = document.getElementById(targetEle),
+          time = options.time || $this.data('time'), //总时间--毫秒为单位
+          finalNum = options.num || $this.data('value'), //要显示的真实数值
+          regulator = options.regulator || 100, //调速器，改变regulator的数值可以调节数字改变的速度
+ 
+          step = finalNum / (time / regulator),/*每30ms增加的数值--*/
+          count = 0, //计数器
+          initial = 0;
+ 
+        var timer = setInterval(function() {
+ 
+          count = count + step;
+ 
+          if(count >= finalNum) {
+            clearInterval(timer);
+            count = finalNum;
+          }
+          //t未发生改变的话就直接返回
+          //避免调用text函数，提高DOM性能
+          var t = Math.floor(count);
+          if(t == initial) return;
+ 
+          initial = t;
+ 
+          $this.innerHTML = initial;
+        }, 30);
+      }
+ 
+      NumAutoPlusAnimation("time", {
+        time: 7500,
+        num: 12000,
+        regulator: 50
+      })
+    </script>
+
+
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+
+      var chart = new CanvasJS.Chart("chartContainer", {
+        title: {
+          text: "Temperature of Each Boiler"
+        },
+        axisY: {
+          title: "Temperature (°C)",
+          suffix: " °C"
+        },
+        data: [{
+          type: "column", 
+          yValueFormatString: "#,### °C",
+          indexLabel: "{y}",
+          dataPoints: [
+            { label: "boiler1", y: 206 },
+            { label: "boiler2", y: 163 },
+            { label: "boiler3", y: 154 },
+          ]
+        }]
+      });
+
+      function updateChart() {
+        var boilerColor, deltaY, yVal;
+        var dps = chart.options.data[0].dataPoints;
+        for (var i = 0; i < dps.length; i++) {
+          deltaY = Math.round(2 + Math.random() *(-2-2));
+          yVal = deltaY + dps[i].y > 0 ? dps[i].y + deltaY : 0;
+          boilerColor = yVal > 200 ? "#FF2500" : yVal >= 170 ? "#FF6000" : yVal < 170 ? "#6B8E23 " : null;
+          dps[i] = {label: "Boiler "+(i+1) , y: yVal, color: boilerColor};
+        }
+        chart.options.data[0].dataPoints = dps; 
+        chart.render();
+      };
+      updateChart();
+
+      setInterval(function() {updateChart()}, 500);
+
+      }
+    </script>
+
 
 
 
