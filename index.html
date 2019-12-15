@@ -62,32 +62,6 @@
 
   </div>
 
-
-
-<section id = "language" class = "container">
-  <center><h2 >Adyghe</h2></center>
-  <div class="row">
-    <div class= "col-sm-4">
-      <label>Type</label><h2>living</h2>
-      <label>Language family</label><h2>IE</h2>
-      <label>country</label><h2>Canada</h2>
-      <label>Typology</label><h2>Fusional</h2>
-    </div>
-    <div class= "col-sm-3">
-      <label>Form numbers in UM</label><h1 id="time">0</h1>
-      <label>Paradigms numbers in UM</label><h1 id="time">0</h1>
-      <label>Token numbers in UD</label><h1 id="time">0</h1>
-      <label>Sentence numbers in UD</label><h1 id="time">0</h1>
-    </div>
-    <div class= "col-sm-5">
-      <div id="chartContainer" style="height: 360px; width: 100%;"></div>
-    </div>
-  </div>
-  <button type="button" onclick="{location.href='languageDetail.html'}">More details of each language</button>
-
-</section>
-
-
     <section id = "viz1" class = "container">
       <div class = "row">
         <div class ="col-sm-5" style="margin-top: 100px;">
@@ -127,7 +101,7 @@
         </div>
         </div>
     </section>
-    
+
      <section id = "viz5" class = "container">
       <div class = "row">
         <div class ="col-sm-4" style="margin-top: 100px;">
@@ -221,6 +195,15 @@
     </section>
 
 
+
+    <center><button type="button" onclick="{location.href='languageDetail.html'}" style="margin-top: 80px;">See more details of each language</button></center>
+    <div class="infogram-embed" data-id="0ef08eb1-a264-455d-a42c-f836d308cd1e" data-type="interactive" data-title="Autumn Charts"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/0ef08eb1-a264-455d-a42c-f836d308cd1e" style="color:#989898!important;text-decoration:none!important;" target="_blank">Autumn Charts</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+
+
+ <!--    <center><button type="button" onclick="{location.href='languageDetail.html'}">See more details of each language</button></center> -->
+
+
+
   <div id="gotop">
     <div class="arrow"></div>
     <div class="stick"></div>
@@ -266,7 +249,6 @@
     var color = d3.scaleThreshold()
                   .domain([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17])
                   .range(["rgb(209, 209, 176)","rgb(245, 245, 120)", "rgb(199,233,180)", "rgb(170, 227, 138)","rgb(78, 212, 160)","rgb(127,205,187)", "rgb(114, 188, 196)", "rgb(65,182,196)","rgb(47, 166, 214)", "rgb(29,145,192)","rgb(23, 108, 212)","rgb(34,94,168)","rgb(37,52,148)","rgb(8,29,88)","rgb(2,56,88)"]);
-                  // .range(d3.schemeYlGnBu[9]);
 
     var format = d3.format(","); //https://github.com/d3/d3-format
 
@@ -579,8 +561,8 @@
 
 
 
-  </script>
-  <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
     <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
     <script>
       $(function(){
@@ -609,98 +591,5 @@
 
       });
     </script>
-    <script>
-      //数字自增到某一值动画参数（目标元素,自定义配置）
-      function NumAutoPlusAnimation(targetEle, options) {
- 
-        /*可以自己改造下传入的参数，按照自己的需求和喜好封装该函数*/
-        //不传配置就把它绑定在相应html元素的data-xxxx属性上吧
-        options = options || {};
- 
-        var $this = document.getElementById(targetEle),
-          time = options.time || $this.data('time'), //总时间--毫秒为单位
-          finalNum = options.num || $this.data('value'), //要显示的真实数值
-          regulator = options.regulator || 100, //调速器，改变regulator的数值可以调节数字改变的速度
- 
-          step = finalNum / (time / regulator),/*每30ms增加的数值--*/
-          count = 0, //计数器
-          initial = 0;
- 
-        var timer = setInterval(function() {
- 
-          count = count + step;
- 
-          if(count >= finalNum) {
-            clearInterval(timer);
-            count = finalNum;
-          }
-          //t未发生改变的话就直接返回
-          //避免调用text函数，提高DOM性能
-          var t = Math.floor(count);
-          if(t == initial) return;
- 
-          initial = t;
- 
-          $this.innerHTML = initial;
-        }, 30);
-      }
- 
-      NumAutoPlusAnimation("time", {
-        time: 7500,
-        num: 12000,
-        regulator: 50
-      })
-    </script>
-
-
-
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <script type="text/javascript">
-      window.onload = function () {
-
-      var chart = new CanvasJS.Chart("chartContainer", {
-        title: {
-          text: "Temperature of Each Boiler"
-        },
-        axisY: {
-          title: "Temperature (°C)",
-          suffix: " °C"
-        },
-        data: [{
-          type: "column", 
-          yValueFormatString: "#,### °C",
-          indexLabel: "{y}",
-          dataPoints: [
-            { label: "boiler1", y: 206 },
-            { label: "boiler2", y: 163 },
-            { label: "boiler3", y: 154 },
-          ]
-        }]
-      });
-
-      function updateChart() {
-        var boilerColor, deltaY, yVal;
-        var dps = chart.options.data[0].dataPoints;
-        for (var i = 0; i < dps.length; i++) {
-          deltaY = Math.round(2 + Math.random() *(-2-2));
-          yVal = deltaY + dps[i].y > 0 ? dps[i].y + deltaY : 0;
-          boilerColor = yVal > 200 ? "#FF2500" : yVal >= 170 ? "#FF6000" : yVal < 170 ? "#6B8E23 " : null;
-          dps[i] = {label: "Boiler "+(i+1) , y: yVal, color: boilerColor};
-        }
-        chart.options.data[0].dataPoints = dps; 
-        chart.render();
-      };
-      updateChart();
-
-      setInterval(function() {updateChart()}, 500);
-
-      }
-    </script>
-
-
-
-
-
-
   </body>
 </html>
