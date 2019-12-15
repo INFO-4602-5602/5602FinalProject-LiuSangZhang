@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Linguistic Datasets Analysis</title>
+    <meta charset="utf-8" />
+    <style>
+        text{
+            font-size:12px;
+        }
+        .mainBars rect{
+          shape-rendering: auto;
+          fill-opacity: 0;
+          stroke-width: 0.5px;
+          stroke: rgb(0, 0, 0);
+          stroke-opacity: 0;
+        }
+        .header{
+            text-anchor:middle;
+            font-size:16px;
+        }
+        line{
+            stroke:grey;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header id="header" class="header" style="  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), center center no-repeat; background-size: cover; background-image: url('images/books.jpg')">
+<!--      <img src = "images/Languages.jpg">-->
+      <div class ="row">
+        <div class = "col-sm-1"></div>
+        <h1 class = "col-sm-5" style="font-size:24px;" >Linguistic Datasets Analysis</h1>
+        <nav class = "col-sm-6 text-right">
+          <a href = "index.html">Home</a>
+          <a href = "design.html">Design</a>
+          <a href = "about.html">About Us</a>
+        </nav>
+      </div>
+
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>Corpus Availibility</h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id = "corpus info" class = "container">
+<!--    <h2>UD & UM introduction</h2>-->
+      <div class = "row">
+        <div class ="col-sm-12">
+          <p>Of the 199 languages in the dataset, 110 languages have labeled data in Unimorph corpus, 51 languages are being annotated for Unimorph, 91 languages have labeled data in the Universal Dependencies corpus, and 16 languages are being annotated for Universal Dependencies. The following interative chart provides a list of the languages and their availability in the two corpora.</p>
+
+           <p>You can mouse over the bars for interaction. The bar color corresponds to corpus availability. If the language is available in two corpora, the bar for that language will have two colors. For example, Afrikaans is available in the Universal Dependencies corpus and is being annotated for the Unimorph corpus. Therefore, we see a bar colored blue and orange in front of Afrikaans. When you mouse over the bar, the two corpora will be highlighted. </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="http://vizjs.org/viz.v1.1.0.min.js"></script>
+    <script>
+
+        var color ={Unimorph:"#109618", Unimorph_future:"#FF9900", UD:"#3366CC", UD_future:"#DC3912"};
+
+        var svg = d3.select("body").append("svg").attr("width", 960).attr("height", 2650);
+
+        svg.append("text").attr("x",width="35%").attr("y",40)
+            .attr("class","header").text("Corpus Info");
+
+        svg.append("text").attr("x",width="75%").attr("y",130)
+            .text("Unimorph");
+        svg.append("rect").attr("x",width="85%").attr("y",110) // https://www.dashingd3js.com/svg-basic-shapes-and-d3js
+            .attr("width", 55)
+            .attr("height", 30)
+            .attr("fill", "#109618");
+
+        svg.append("text").attr("x",width="75%").attr("y",180)
+            .text("Unimorph_future");
+        svg.append("rect").attr("x",width="85%").attr("y",160) // https://www.dashingd3js.com/svg-basic-shapes-and-d3js
+            .attr("width", 55)
+            .attr("height", 30)
+            .attr("fill", "#FF9900");
+
+        svg.append("text").attr("x",width="75%").attr("y",230)
+            .text("UD");
+        svg.append("rect").attr("x",width="85%").attr("y",210) // https://www.dashingd3js.com/svg-basic-shapes-and-d3js
+            .attr("width", 55)
+            .attr("height", 30)
+            .attr("fill", "#3366CC");
+
+        svg.append("text").attr("x",width="75%").attr("y",280)
+            .text("UD_future");
+        svg.append("rect").attr("x",width="85%").attr("y",260) // https://www.dashingd3js.com/svg-basic-shapes-and-d3js
+            .attr("width", 55)
+            .attr("height", 30)
+            .attr("fill", "#DC3912");
+
+
+
+        var g =[svg.append("g").attr("transform","translate(150,100)")];
+
+        // https://stackoverflow.com/questions/42285441/how-to-read-in-csv-with-d3-v4
+        // Read in a csv file and convert it to an array
+        // https://flaviocopes.com/how-to-initialize-array-with-values/
+        // https://2ality.com/2013/11/initializing-arrays.html
+        // https://stackoverflow.com/questions/4852017/how-to-initialize-an-arrays-length-in-javascript
+        d3.csv("combinedData.csv", function(error, datacsv) {
+            if (error) throw error;
+
+            var data = [];
+            datacsv.forEach(function (d) {
+                if (d["UnimorphNow"] == "1"){
+                    var corpus = "Unimorph";
+                    data.push([corpus, d["Language"], 1]);
+                }
+
+                if (d["UnimorphUpcoming"] == "1"){
+                    var corpus = "Unimorph_future";
+                    data.push([corpus, d["Language"], 1]);
+                }
+
+                if (d["UDNow"] == "1"){
+                    var corpus = "UD";
+                    data.push([corpus, d["Language"], 1]);
+                }
+
+                if (d["UDUpcoming"] == "1"){
+                    var corpus = "UD_future";
+                    data.push([corpus, d["Language"], 1]);
+                }
+            });
+
+            console.log(data);
+
+            // https://stackoverflow.com/questions/24900875/whats-the-meaning-of-an-arrow-formed-from-equals-greater-than-in-javas
+            var bp=[ viz.bP()
+                        .data(data)
+                        // .min(0)
+                        .pad(1.5)
+                        .height(2500)
+                        .width(600)
+                        .barSize(35)
+                        .fill(d=>color[d.primary])
+                ];
+
+            [0].forEach(function(i){
+                g[i].call(bp[i]);
+
+                g[i].append("text").attr("x",-50).attr("y",-15).style("text-anchor","middle").text("Corpus");
+                g[i].append("text").attr("x", 650).attr("y",-15).style("text-anchor","middle").text("Language");
+
+                g[i].append("line").attr("x1",-100).attr("x2",0); // lines under the text "Corpus"
+                g[i].append("line").attr("x1",600).attr("x2",700); // lines under the text "Language"
+
+                g[i].selectAll(".mainBars")
+                    .on("mouseover",mouseover)
+                    .on("mouseout",mouseout);
+
+                g[i].selectAll(".mainBars").append("text").attr("class","label")
+                    .attr("x",d=>(d.part=="primary"? -30: 30))
+                    .attr("y",d=>+6)
+                    .text(d=>d.key)
+                    .attr("text-anchor",d=>(d.part=="primary"? "end": "start"));
+            });
+
+            function mouseover(d){
+                [0].forEach(function(i){
+                    bp[i].mouseover(d);
+
+                    // svg.append("text").attr("x",width="85%").attr("y",400)
+                    //     .text(d.key);
+                });
+            }
+            function mouseout(d){
+                [0].forEach(function(i){
+                    bp[i].mouseout(d);
+
+                    // svg.select("text").remove();
+                });
+            }
+            d3.select(self.frameElement).style("height", "800px");
+        });
+    </script>
+
+  </body>
+</html>
