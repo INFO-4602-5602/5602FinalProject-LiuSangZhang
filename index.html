@@ -29,7 +29,7 @@
                     <div class="col-lg-12">
                         <div class="text-container">
                             <h1>Words in Languages</h1>
-                            <p class="p-large">asdfghjklasdfghjklasdfghjklasdfghjkl</p>
+                            <p class="p-large">A helper for linguists in morphology using the UM and UD datasets</p>
                         </div>
                     </div> 
                 </div> 
@@ -115,7 +115,7 @@
 
      <section id = "viz5" class = "container">
       <div class = "row">
-        <div class ="col-sm-4" style="margin-top: 100px;">
+        <div class ="col-sm-4" style="margin-top: 50px;">
           <li>
             Language family is a way to group world languages by their genealogy. Languages of the same family are historically related, are descendent of a common ancestral language, and thus are expected to share similarities.
           </li>
@@ -134,7 +134,10 @@
     
     <section id = "viz6" class = "container">
       <div class = "row">
-        <div class ="col-sm-4" style="margin-top: 100px;">
+        <div class = "col-sm-8">
+          <img class ="portrait" src = "images/Typology_Family.png">
+        </div>
+        <div class ="col-sm-4" style="margin-top: 150px;">
           <li>
             We have discussed typology and language family separately above. Now let’s see How the typologies are distributed in different language families. 
           </li>
@@ -142,15 +145,12 @@
             Apparently the three largest language families are Indo-European, Uralic, and Afro-Asiatic. The dominant typology in Indo-European languages is fusional while in Uralic the number of agglutinative typology languages is a little more than fusional or none typology. In Afro-Asiatic, almost half of the languages are fusional, half are none typology.
           </li>
         </div>
-        <div class = "col-sm-8">
-          <img class ="portrait" src = "images/Typology_Family.png">
-        </div>
       </div>
     </section>
 
     <section id = "viz3" class = "container">
       <div class = "row">
-        <div class ="col-sm-6" style="margin-top: 100px;">
+        <div class ="col-sm-6" style="margin-top: 20px;">
           <li>
             According to linguistic studies, each affix in agglutinative languages has only one functional meaning while fusional languages usually experess multiple functional meanings with each affix. The number of paradigms is how many dictionary word forms are labeld in UM and the number of forms is how may different inflected forms are labeled in UM. Is there any pattern as to the number of forms and the number of paradigms in relation to the typology of the language?
           </li>
@@ -160,15 +160,6 @@
           <li>
             Note: The visualization is using the logarithm of the form counts and paradigm counts because the numbers of forms of paradigms vary a lot. For languages with not annotated data in UM (i.e. the counts are zeros), we set it to 0.1 before taking logarithm.
           </li>
-<!--          <li>-->
-<!--            Forms and Paradigm reflects the rich level of language resources. However, the number of forms and paradigms fluctuates greatly between languages, so getting log value of number of forms and paradigms will be a good method. -->
-<!--          </li>-->
-<!--          <li>-->
-<!--            In the visualization we also set 0 paradigm or form as 0.1, so that we can get the log value.-->
-<!--          </li>-->
-<!--          <li>-->
-<!--            Many languages which have no typology have very few forms or paradigms or even no forms and paradigms.-->
-<!--          </li>-->
         </div>
         <div class = "col-sm-6">
           <img class ="portrait" src = "images/Forms-Paradigms.png">
@@ -189,15 +180,6 @@
           <li>
             The scatter plot about the average table size and average sentence length visualize information we need to answer this question. Most of the dots cluster around the top left corner of the plot, and few languages are at the top right. This supports the linguistic hypothesis.
           </li>
-<!--          <li>-->
-<!--            This is a scatter plot that shows the average sentence length and average table size in different typology. -->
-<!--          </li>-->
-<!--          <li>-->
-<!--            Average Sentence Length = Number of Tokens / Number of Sentences. Average Table Size = Number of Forms / Number of Paradigms. -->
-<!--          </li>-->
-<!--          <li>-->
-<!--            Many low resource languages have no tokens remaining in the world, so in the chart a lot of dots are on the Y-axis-->
-<!--          </li>-->
         </div>
         </div>
     </section>
@@ -208,7 +190,7 @@
         <div class = "col-sm-12">
           <img class ="portrait" src = "images/Low Resource.png">
         </div>
-        <div class ="col-sm-12">
+        <div class ="col-sm-12" style="margin-bottom: 50px;">
           <li>
             Low-resourced languages are a big concern of linguistic studies. The treemap shows information about low-resource languages, which are UM and UD languages that have limited annotated data in UM.
           </li>
@@ -221,11 +203,10 @@
 
 
 
-    <center><button type="button" onclick="{location.href='languageDetail.html'}" style="margin-top: 80px;">See more details of each language</button></center>
-    <div class="infogram-embed" data-id="0ef08eb1-a264-455d-a42c-f836d308cd1e" data-type="interactive" data-title="Autumn Charts"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/0ef08eb1-a264-455d-a42c-f836d308cd1e" style="color:#989898!important;text-decoration:none!important;" target="_blank">Autumn Charts</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
-
-
- <!--    <center><button type="button" onclick="{location.href='languageDetail.html'}">See more details of each language</button></center> -->
+    <center><button class="button" type="button" onclick="{location.href='languageDetail.html'}" style="background-color: #7892C2; border: none; color: white; padding: 10px;text-align: center;text-decoration: none;display: inline-block;font-size: 20px;margin: 4px 2px;cursor: pointer;border-radius: 14px;">See more details of each language</button>
+    <div class="container" style="margin-top: 20px;">
+      <div class="infogram-embed" data-id="0ef08eb1-a264-455d-a42c-f836d308cd1e" data-type="interactive" data-title="Autumn Charts"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/0ef08eb1-a264-455d-a42c-f836d308cd1e" style="color:#989898!important;text-decoration:none!important;" target="_blank">Example：Arabic Detail</a></div>
+    </div>
 
 
 

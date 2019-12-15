@@ -94,17 +94,6 @@ padding: 20% 0;
 }
 
 
-.imgcard{
-  cursor: pointer;
-  transition: all 0.4s;
-
-}
-
-
-.imgcard:hover{
-  transform: scale(1.1);
-}
-
 .arrow{
   border: 9px solid transparent;
   border-bottom-color: #3DA0DB;
@@ -183,92 +172,74 @@ footer ul {
 }
 
 
-    /* Create two unequal columns that floats next to each other */
-    .column {
-      float: left;
-      /*padding: 10px;*/
-      height: 650px; /* Should be removed. Only for demonstration */
-    }
-
-    .left {
-      width: 50%;
-    }
-
-    .right {
-      width: 50%;
-    }
-
-    .lefttop {
-      height: 50%;
-    }
-
-    .leftbottom {
-      height: 50%;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    svg {
-      width:100%;
-      height:100%;
-      float: right;
-    }
-
-    /*
-    Bar tooltips
-    */
-    .bartooltip {
-      position: absolute;
-      text-align: center;
-      width: 60px;
-      height: 28px;
-      padding: 2px;
-      font: 12px sans-serif;
-      background: lightsteelblue;
-      border: 0px;
-      border-radius: 8px;
-      pointer-events: none;
-    }
-
-  /*
-  Tooltips
-  */
-  .names {
-  fill: none;
-  stroke: #fff;
-  stroke-linejoin: round;
+  /* Create two unequal columns that floats next to each other */
+  .column {
+    float: left;
+    /*padding: 10px;*/
+    height: 650px; /* Should be removed. Only for demonstration */
   }
 
-    /* Tooltip CSS */
-    .d3-tip {
-    line-height: 1.5;
-    font-weight: 400;
-    font-family:"avenir next", Arial, sans-serif;
-    padding: 6px;
-    background: rgba(0, 0, 0, 0.6);
-    color: #FFA500;
-    border-radius: 1px;
+
+  /* Clear floats after the columns */
+
+  svg {
+    width:100%;
+    height:100%;
+    float: right;
+  }
+
+  /*
+  Bar tooltips
+  */
+  .bartooltip {
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
     pointer-events: none;
-    text-align:center;
-    }
+  }
 
-    text{
-      /*The pointer-events property defines whether or not
-        an element reacts to pointer events, like hover and click*/
-      pointer-events:none;
-    }
+/*
+Tooltips
+*/
+.names {
+fill: none;
+stroke: #fff;
+stroke-linejoin: round;
+}
 
-    .details{
-      color:white;
-    }
+  /* Tooltip CSS */
+  .d3-tip {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family:"avenir next", Arial, sans-serif;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFA500;
+  border-radius: 1px;
+  pointer-events: none;
+  text-align:center;
+  }
 
-    .detailsCountryName{
-      color:white;
-      font-size:20px;
-      font-weight: bolder;
-    }
+  text{
+    /*The pointer-events property defines whether or not
+      an element reacts to pointer events, like hover and click*/
+    pointer-events:none;
+  }
+
+  .details{
+    color:white;
+  }
+
+  .detailsCountryName{
+    color:white;
+    font-size:20px;
+    font-weight: bolder;
+  }
+
+
