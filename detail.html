@@ -36,7 +36,8 @@
         <h1 class = "col-sm-5" style="font-size:24px;" >Linguistic Datasets Analysis</h1>
         <nav class = "col-sm-6 text-right">
           <a href = "index.html">Home</a>
-          <a href = "design.html">Design</a>
+          <a href = "languageDetail.html">Language Details</a>
+<!--          <a href = "design.html">Design</a>-->
           <a href = "about.html">About Us</a>
         </nav>
       </div>
@@ -46,8 +47,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-container">
-                            <h1>Corpus Availibility</h1>
-
+                            <h1>Data Availibility</h1>
                         </div>
                     </div>
                 </div>
@@ -59,9 +59,9 @@
 <!--    <h2>UD & UM introduction</h2>-->
       <div class = "row">
         <div class ="col-sm-12">
-          <p>Of the 199 languages in the dataset, 110 languages have labeled data in Unimorph corpus, 51 languages are being annotated for Unimorph, 91 languages have labeled data in the Universal Dependencies corpus, and 16 languages are being annotated for Universal Dependencies. The following interative chart provides a list of the languages and their availability in the two corpora.</p>
+          <p>Of the 199 languages in the dataset, 110 languages have labeled data in the Unimorph dataset, 51 languages are being annotated for Unimorph, 91 languages have labeled data in the Universal Dependencies corpus, and 16 languages are being annotated for Universal Dependencies. The following interative chart provides a list of the languages and their availability in the two datasets.</p>
 
-           <p>You can mouse over the bars for interaction. The bar color corresponds to corpus availability. If the language is available in two corpora, the bar for that language will have two colors. For example, Afrikaans is available in the Universal Dependencies corpus and is being annotated for the Unimorph corpus. Therefore, we see a bar colored blue and orange in front of Afrikaans. When you mouse over the bar, the two corpora will be highlighted. </p>
+           <p>You can mouse over the bars for interaction. The bar color corresponds to dataset availability. If the language is available in two corpora, the bar for that language will have two colors. For example, Afrikaans is available in the Universal Dependencies corpus and is being annotated for the Unimorph project. Therefore, we see a bar colored blue and orange in front of Afrikaans. When you mouse over the bar, the two corpora will be highlighted. </p>
         </div>
       </div>
     </section>
@@ -75,7 +75,7 @@
         var svg = d3.select("body").append("svg").attr("width", 960).attr("height", 2650);
 
         svg.append("text").attr("x",width="35%").attr("y",40)
-            .attr("class","header").text("Corpus Info");
+            .attr("class","header").text("Language and Dataset");
 
         svg.append("text").attr("x",width="75%").attr("y",130)
             .text("Unimorph");
@@ -156,7 +156,7 @@
             [0].forEach(function(i){
                 g[i].call(bp[i]);
 
-                g[i].append("text").attr("x",-50).attr("y",-15).style("text-anchor","middle").text("Corpus");
+                g[i].append("text").attr("x",-50).attr("y",-15).style("text-anchor","middle").text("Dataset");
                 g[i].append("text").attr("x", 650).attr("y",-15).style("text-anchor","middle").text("Language");
 
                 g[i].append("line").attr("x1",-100).attr("x2",0); // lines under the text "Corpus"
