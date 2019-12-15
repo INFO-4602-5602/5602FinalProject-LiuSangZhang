@@ -96,7 +96,7 @@
     </footer>
 
     <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
-    <script>
+    <script type="text/javascript">
       $(function(){
 
           $(window).scroll(function(){  
@@ -123,8 +123,8 @@
 
       });
     </script>
-
-    <script>
+    <script type="text/javascript">
+      //source code: https://blog.csdn.net/qq_16371909/article/details/78743588
       function NumAutoPlusAnimation(targetEle, options) {
  
         options = options || {};
@@ -157,212 +157,233 @@
       }
     </script>
 
-  <script src="https://d3js.org/d3.v4.js"></script>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
- <script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
 
-  // set the dimensions and margins of the graph
-  var margin = {top: 20, right: 30, bottom: 40, left: 90},
-      width = 550 - margin.left - margin.right,
-      height = 380 - margin.top - margin.bottom;
+      // set the dimensions and margins of the graph
+      var margin = {top: 20, right: 30, bottom: 40, left: 90},
+          width = 550 - margin.left - margin.right,
+          height = 380 - margin.top - margin.bottom;
 
-  // append the svg object to the body of the page
-  var svg = d3.select("#barchart")
-    .append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-      .attr("transform",
-            "translate(" + margin.left + "," + margin.top + ")");
+      // append the svg object to the body of the page
+      var svg = d3.select("#barchart")
+        .append("svg")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+          .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
 
-    var content_names = ["Noun MSD", "Verb MSD", "ADJ MSD"];
+        var content_names = ["Noun MSD", "Verb MSD", "ADJ MSD"];
 
-    d3.csv("./combinedData.csv", function(data) {
-      var output_languages = [];
-      data.forEach(function (d) {
-        // console.log(d[content_names[0]])
-        if(d[content_names[0]] + d[content_names[1]] + d[content_names[2]] != 0) {
-          output_languages.push(d.Language);
-        }
-
-      });
-      
-      // console.log(output_languages);
-      drop_down("selectNumber", output_languages);
-
-      document.getElementById('type').innerHTML = "hahaha";
-
-
-    });
-
-    function drop_down(div_id, option_names) {
-      // var select = document.getElementById("selectNumber");
-      var select = document.getElementById(div_id);
-      var options = ["1", "2", "3", "4", "55"];
-      if(option_names.length != 0) {
-        options = option_names;
-      }
-      for(var i = 0; i < options.length; i++) {
-          var opt = options[i];
-          var el = document.createElement("option");
-          el.textContent = opt;
-          el.value = opt;
-          select.appendChild(el);
-      }
-
-      get_drop_down_value()
-
-    };
-    
-    function get_drop_down_value() {
-
-      d3.csv("./combinedData.csv", function(raw_data) {
-        // d3.selectAll("#my_dataviz > *").remove();
-        svg.selectAll("*").remove();
-
-        var e = document.getElementById("selectNumber");
-        var result = e.options[e.selectedIndex].value;
-        raw_data.forEach(function (d) {
-            if(d.Language == result) {
-              document.getElementById('type').innerHTML = d.Type;
-              document.getElementById('family').innerHTML = d.LanguageFamily;
-              document.getElementById('subfamily').innerHTML = d.LanguageFamilyDetail;
-              // document.getElementById('country').innerHTML = d.;
-              document.getElementById('typology').innerHTML = d.Typology;
-              document.getElementById('treebank').innerHTML = d.TreebankNames;
-              document.getElementById('LR').innerHTML = d['Low Resource'];
+        d3.csv("./combinedData.csv", function(data) {
+          var output_languages = [];
+          data.forEach(function (d) {
+            if(d[content_names[0]] + d[content_names[1]] + d[content_names[2]] != 0) {
+              output_languages.push(d.Language);
             }
-          });
 
-        var cur_lang = result;
-        var max_bound = -1;
-        var data = [{key: "Noun MSD", value: "2342"}, {key: "Verb MSD", value: "4320"}, {key: "ADJ MSD", value: "3202"}];
+          });
+          
+          drop_down("selectNumber", output_languages);
+
+          document.getElementById('type').innerHTML = "hahaha";
+
+
+        });
+
+        function drop_down(div_id, option_names) {
+          // var select = document.getElementById("selectNumber");
+          var select = document.getElementById(div_id);
+          var options = ["1", "2", "3", "4", "55"];
+          if(option_names.length != 0) {
+            options = option_names;
+          }
+          for(var i = 0; i < options.length; i++) {
+              var opt = options[i];
+              var el = document.createElement("option");
+              el.textContent = opt;
+              el.value = opt;
+              select.appendChild(el);
+          }
+
+          get_drop_down_value()
+
+        };
         
-        if(raw_data.length != 0) {
-          raw_data.forEach(function (d) {
-            if(d.Language == cur_lang) {
-              for(var i = 0; i < 3; i++) {
-                data[i].value = d[data[i].key];
-                max_bound = Math.max(d[data[i].key], max_bound);
-              }
+        function get_drop_down_value() {
 
-              NumAutoPlusAnimation("form", {
-                time: 2500,
-                num: d.Forms,
-                regulator: 50
-              });
-
-              NumAutoPlusAnimation("paradigms", {
-                time: 2500,
-                num: d.Paradigms,
-                regulator: 50
-              });
-
-              NumAutoPlusAnimation("meanUM", {
-                time: 2500,
-                num: d['Forms/Paradigms'],
-                regulator: 50
-              });
-
-              NumAutoPlusAnimation("token", {
-                time: 2500,
-                num: d.Tokens,
-                regulator: 50
-              });
-
-              NumAutoPlusAnimation("sentence", {
-                time: 2500,
-                num: d.Sentences,
-                regulator: 50
-              });
-
-              NumAutoPlusAnimation("meanUD", {
-                time: 2500,
-                num: d['Tokens/Sentences'],
-                regulator: 50
-              });
-
-            }
-          });
-        }
-        console.log(data);
-        console.log(max_bound)
-
-        var fill = d3.scaleOrdinal(d3.schemeCategory20);
-
-        // Add X axis
-        var x = d3.scaleLinear()
-          .domain([0, max_bound + 3])
-          .range([ 0, width]);
-        svg.append("g")
-          .attr("transform", "translate(0," + height + ")")
-          .call(d3.axisBottom(x))
-          .selectAll("text")
-            .attr("transform", "translate(-10,0)rotate(-45)")
-            .style("text-anchor", "end");
-
-        // Y axis
-        var y = d3.scaleBand()
-          .range([ 0, height ])
-          .domain(data.map(function(d) { return d.key; }))
-          // .domain(data.map(function(d) { return d['Country']; }))
-          .padding(.1);
-        svg.append("g")
-          .call(d3.axisLeft(y))
-          
-        //Bars
-        svg.selectAll("myRect")
-          .data(data)
-          .enter()
-          .append("rect")
-          .attr("x", x(0) )
-          .attr("y", function(d) { return y(d.key); })
-          .attr("width", function(d) { return x(d.value); })
-          .attr("height", y.bandwidth() )
-          // .attr("fill", "#69b3a2")
-          .attr("fill", (d, i) => fill(i))
-
-
-
-        google.charts.load('current', {'packages':['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
-
-        // Draw the chart and set the chart values
-        function drawChart() {
           d3.csv("./combinedData.csv", function(raw_data) {
-            var piedata = [{key: "Noun Paradigms", value: 1609}, {key: "Verb Paradigms", value: 0}, {key: "Adjective Paradigms", value: 57}];
+            // d3.selectAll("#my_dataviz > *").remove();
+            svg.selectAll("*").remove();
 
+            var e = document.getElementById("selectNumber");
+            var result = e.options[e.selectedIndex].value;
             raw_data.forEach(function (d) {
-              if(d.Language == cur_lang) {
-                for(var i = 0; i < 3; i++) {
-                  piedata[i].value = parseFloat(d[piedata[i].key]);
+                if(d.Language == result) {
+                  document.getElementById('type').innerHTML = d.Type;
+                  document.getElementById('family').innerHTML = d.LanguageFamily;
+                  document.getElementById('subfamily').innerHTML = d.LanguageFamilyDetail;
+                  // document.getElementById('country').innerHTML = d.;
+                  document.getElementById('typology').innerHTML = d.Typology;
+                  document.getElementById('treebank').innerHTML = d.TreebankNames;
+                  document.getElementById('LR').innerHTML = d['Low Resource'];
                 }
-                console.log(piedata[0].value, piedata[1].value, piedata[2].value)
-                var data = google.visualization.arrayToDataTable([
-                  ['Type', 'Paradigms numbers'],
-                  ['Noun Paradigms', piedata[0].value],
-                  ['Verb Paradigms', piedata[1].value],
-                  ['Adjective Paradigms', piedata[2].value],
-                ]);
-                // Optional; add a title and set the width and height of the chart
-                var options = {'title':'Paradigm numbers of each type of words', 'width':650, 'height':600};
+              });
 
-                // Display the chart inside the <div> element with id="piechart"
-                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-                chart.draw(data, options);
-              }
-            });
-          });
+            var cur_lang = result;
+            var max_bound = -1;
+            var data = [{key: "Noun MSD", value: "2342"}, {key: "Verb MSD", value: "4320"}, {key: "ADJ MSD", value: "3202"}];
+            
+            if(raw_data.length != 0) {
+              raw_data.forEach(function (d) {
+                if(d.Language == cur_lang) {
+                  for(var i = 0; i < 3; i++) {
+                    data[i].value = d[data[i].key];
+                    max_bound = Math.max(d[data[i].key], max_bound);
+                  }
 
-          
-        }
+                  NumAutoPlusAnimation("form", {
+                    time: 2500,
+                    num: d.Forms,
+                    regulator: 50
+                  });
 
-      })
+                  NumAutoPlusAnimation("paradigms", {
+                    time: 2500,
+                    num: d.Paradigms,
+                    regulator: 50
+                  });
+
+                  NumAutoPlusAnimation("meanUM", {
+                    time: 2500,
+                    num: d['Forms/Paradigms'],
+                    regulator: 50
+                  });
+
+                  NumAutoPlusAnimation("token", {
+                    time: 2500,
+                    num: d.Tokens,
+                    regulator: 50
+                  });
+
+                  NumAutoPlusAnimation("sentence", {
+                    time: 2500,
+                    num: d.Sentences,
+                    regulator: 50
+                  });
+
+                  NumAutoPlusAnimation("meanUD", {
+                    time: 2500,
+                    num: d['Tokens/Sentences'],
+                    regulator: 50
+                  });
+
+                }
+              });
+            }
+            // console.log(data);
+            // console.log(max_bound)
+
+            // var fill = d3.scaleOrdinal(d3.schemeCategory20);
+            var color = d3.scaleOrdinal()
+                      .domain(data.map(function(d) {return d.key;}))
+                      .range(["#007bff", "#dc3545", "#fd7e14"]);
+
+            // Add X axis
+            var x = d3.scaleLinear()
+              .domain([0, max_bound + 3])
+              .range([ 0, width]);
+            svg.append("g")
+              .attr("transform", "translate(0," + height + ")")
+              .call(d3.axisBottom(x))
+              .selectAll("text")
+                .attr("transform", "translate(-10,0)rotate(-45)")
+                .style("text-anchor", "end");
+
+            // Y axis
+            var y = d3.scaleBand()
+              .range([ 0, height ])
+              .domain(data.map(function(d) { return d.key; }))
+              .padding(.1);
+            svg.append("g")
+              .call(d3.axisLeft(y))
+              
+            //Bars
+            svg.selectAll("myRect")
+              .data(data)
+              .enter()
+              .append("rect")
+              .attr("x", x(0) )
+              .attr("y", function(d) { return y(d.key); })
+              .attr("width", function(d) { return x(d.value); })
+              .attr("height", y.bandwidth() )
+              // .attr("fill", "#69b3a2")
+              // .attr("fill", (d, i) => fill(i))
+              .attr("fill", function(d) {
+                return color(d.key);
+              })
 
 
-    };
-  </script>
+            svg.selectAll("myRect")
+              .data(data)
+              .enter()
+              .append("text")
+              .attr("class", "label")
+              .attr("y", function (d) {
+                  return y(d.key) + y.bandwidth() / 2 ;
+              })
+              .attr("x", function (d) {
+                  return x(d.value) + 5 ;
+              })
+              .text(function (d) {
+                // console.log(d.value)
+                return d.value;
+              });
+
+
+
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            // Draw the chart and set the chart values
+            function drawChart() {
+              d3.csv("./combinedData.csv", function(raw_data) {
+                var piedata = [{key: "Noun Paradigms", value: 1609}, {key: "Verb Paradigms", value: 0}, {key: "Adjective Paradigms", value: 57}];
+
+                raw_data.forEach(function (d) {
+                  if(d.Language == cur_lang) {
+                    for(var i = 0; i < 3; i++) {
+                      piedata[i].value = parseFloat(d[piedata[i].key]);
+                    }
+                    // console.log(piedata[0].value, piedata[1].value, piedata[2].value)
+                    var data = google.visualization.arrayToDataTable([
+                      ['Type', 'Paradigms numbers'],
+                      ['Noun Paradigms', piedata[0].value],
+                      ['Verb Paradigms', piedata[1].value],
+                      ['Adjective Paradigms', piedata[2].value],
+                    ]);
+                    // Optional; add a title and set the width and height of the chart
+                    var options = {'title':'Paradigm numbers of each type of words', 'width':650, 'height':600};
+
+                    // Display the chart inside the <div> element with id="piechart"
+                    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                    chart.draw(data, options);
+                  }
+                });
+              });
+
+              
+            }
+
+          })
+
+
+        };
+
+      </script>
 
 
   </body>
