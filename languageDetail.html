@@ -37,43 +37,36 @@
         </div> 
     </header> 
   
-    <section id = "section" class = "container">
-     <center>
-      <label>Choose a language</label>
-      <select id="selectNumber" onChange="get_drop_down_value()">
-      </select></center>
-    </section>
 
 
     <section id = "language" class = "container">
       <div class="row">
-        <div class= "col-sm-4">
+        <div class= "col-sm-3">
+          <label>Choose a language</label>
+          <select id="selectNumber" onChange="get_drop_down_value()" style="margin-bottom: 20px;">
+          </select>
+          </br>
           <label>Type</label><h2 id="type">living</h2>
           <label>Language family</label><h2 id="family">IE</h2>
           <label>Sub-family</label><h2 id="subfamily">IE</h2>
           <label>Typology</label><h2 id="typology">Fusional</h2>
           <!-- <label>Countries</label><h2>Canada</h2> -->
         </div>
-        <div class= "col-sm-4">
-          <label>Low Resource in UM</label><h1 id="LR">0</h1>
-          <label>Forms in UM</label><h1 id="form">0</h1>
-          <label>Paradigms in UM</label><h1 id="paradigms">0</h1>
-          <label>Average inflection table size</label><h1 id="meanUM">0</h1>
-        </div>
-        <div class= "col-sm-4">
-          <label>Words in UD</label><h1 id="token">0</h1>
-          <label>Sentences in UD</label><h1 id="sentence">0</h1>
-          <label>Average sentence length</label><h1 id="meanUD">0</h1>
-          <label>Treebanks in UD</label><h1 id="treebank">Fusional</h1>
-        </div>
-      </div>
+        <div class= "col-sm-3">
+          <label>Forms in UM</label><h2 id="form">0</h2>
+          <label>Paradigms in UM</label><h2 id="paradigms">0</h2>
+          <label>Average inflection table size</label><h2 id="meanUM">0</h2>
+          <label>Low Resource in UM</label><h2 id="LR">0</h2>
 
-      <div class="row" style="margin-bottom: 100px;">        
+
+          <label>Words in UD</label><h2 id="token">0</h2>
+          <label>Sentences in UD</label><h2 id="sentence">0</h2>
+          <label>Average sentence length</label><h2 id="meanUD">0</h2>
+          <label>Treebanks in UD</label><h2 id="treebank">Fusional</h2>
+        </div>
         <div class= "col-sm-6">
           <div id="piechart"></div>
-        </div>
-        <div class= "col-sm-6">
-          <center><label style="margin-top: 50px;">Average inflection type per part-of-speech</label></center>
+          <center><label>Average inflection type per part-of-speech</label></center>
           <div id="barchart"></div>
         </div>
       </div>
@@ -164,7 +157,7 @@
 
       // set the dimensions and margins of the graph
       var margin = {top: 20, right: 30, bottom: 40, left: 90},
-          width = 550 - margin.left - margin.right,
+          width = 500 - margin.left - margin.right,
           height = 380 - margin.top - margin.bottom;
 
       // append the svg object to the body of the page
@@ -366,7 +359,7 @@
                       ['Adjective Paradigms', piedata[2].value],
                     ]);
                     // Optional; add a title and set the width and height of the chart
-                    var options = {'title':'Paradigm numbers of each type of words', 'width':650, 'height':600};
+                    var options = {'title':'Paradigm numbers of each type of words', 'width':650, 'height':400};
 
                     // Display the chart inside the <div> element with id="piechart"
                     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
